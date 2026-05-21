@@ -1,0 +1,112 @@
+import Image from "next/image";
+
+const features = [
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z" />
+      </svg>
+    ),
+    label: "10 хувийн VIP өрөө",
+  },
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+    label: "Бүрэн бар болон хоолны үйлчилгээ",
+  },
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="18" rx="2" strokeWidth={1.5} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 2v4M8 2v4M3 10h18" />
+      </svg>
+    ),
+    label: "Захиалга өгсөн тохиолдолд 24/7 ашиглах боломжтой",
+  },
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    ),
+    label: "4-30 зочны бүлгүүд",
+  },
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+      </svg>
+    ),
+    label: "Дээд зэрэглэлийн Bose дууны систем",
+  },
+  {
+    icon: (
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+      </svg>
+    ),
+    label: "100,000+ дуунд сан",
+  },
+];
+
+export default function KaraokeLounge() {
+  return (
+    <section id="karaoke" className="bg-hotel-cream">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {/* Image */}
+        <div className="relative h-[500px] md:h-auto overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80"
+            alt="Karaoke & Lounge"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </div>
+
+        {/* Text */}
+        <div className="px-12 md:px-[8%] py-16 flex flex-col justify-center">
+          <p className="text-gold text-xs tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
+            Karaoke &amp; Lounge
+          </p>
+          <h2
+            className="text-hotel-dark text-3xl md:text-4xl mb-6"
+            style={{ fontFamily: "var(--font-playfair), serif", fontStyle: "italic" }}
+          >
+            Karaoke &amp; Lounge
+          </h2>
+          <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-3">
+            Karaoke &amp; Lounge нь хөгжим, амралт, зугаа цэнгэлийг нэг дор
+            хослуулсан орчин үеийн тав тухтай space юм. Найз нөхөд, хамт
+            олонтойгоо хөгжилдэх, стресс тайлах, эсвэл зугаар л тайван сууж
+            цагийг өнгөрүүлэхэд төгс тохирно.
+          </p>
+          <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-10">
+            Чанартай sound system бүхий private каraoke өрөөнүүд болон тухтай
+            lounge хэсэг нь танд өөр өөр vibe-ийг нэг дор мэдрүүлнэ. Уух
+            зүйлс, хөнгөн зууштайгаа хамт мартагдашгүй үдшийг бүтээгээрэй.
+          </p>
+
+          <ul className="grid grid-cols-1 gap-3 mb-10">
+            {features.map((f) => (
+              <li key={f.label} className="flex items-center gap-3 text-hotel-charcoal/70 text-sm">
+                <span className="text-gold shrink-0">{f.icon}</span>
+                {f.label}
+              </li>
+            ))}
+          </ul>
+
+          <button className="border border-hotel-dark text-hotel-dark hover:bg-hotel-dark hover:text-white text-xs tracking-[0.2em] uppercase px-8 py-3 transition-colors inline-flex items-center gap-3 self-start">
+            Дэлгэрэнгүй унших
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
