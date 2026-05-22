@@ -18,8 +18,8 @@ export default function HomePage() {
         <Rooms />
         <Restaurant />
         <EventHalls />
-        {/* <KaraokeLounge /> */}
-        {/* <Quote /> */}
+        <KaraokeLounge />
+        <Quote />
       </main>
       <Footer />
     </>

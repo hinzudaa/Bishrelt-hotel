@@ -35,29 +35,22 @@ export default function Quote() {
   const q = quotes[current];
 
   return (
-    <section className="bg-hotel-cream py-24 px-8">
-      <div className="max-w-2xl mx-auto text-center">
-        {/* Source label */}
-        <p className="text-gold text-xs tracking-[0.35em] uppercase mb-10 flex items-center justify-center gap-3">
-          <span className="w-6 h-px bg-gold inline-block" />
+    <section className="bg-[#F0EBE0] py-24">
+      <div className="max-w-[754px] mx-auto text-center px-8">
+        <p className="text-[#C9A961] text-[16px] tracking-[0.35em] uppercase mb-10 flex items-center justify-center gap-3 font-normal font-roboto-slab ">
+          <span className="w-6 h-px bg-[#C9A961] inline-block" />
           {q.source}
           <span className="w-6 h-px bg-gold inline-block" />
         </p>
 
-        {/* Quote */}
-        <blockquote
-          className="text-hotel-dark text-lg md:text-xl leading-relaxed mb-8"
-          style={{ fontFamily: "var(--font-playfair), serif", fontStyle: "italic" }}
-        >
+        <blockquote className="text-black text-lg md:text-[24px] leading-relaxed mb-8 font-cormorant italic font-semibold">
           {q.text}
         </blockquote>
 
-        {/* Author */}
-        <cite className="text-hotel-charcoal/60 text-sm not-italic tracking-wider">
+        <cite className="text-black text-[24px] tracking-wider font-cormorant font-semibold">
           {q.author}
         </cite>
 
-        {/* Dot navigation */}
         <div className="flex items-center justify-center gap-2 mt-8">
           {quotes.map((_, i) => (
             <button

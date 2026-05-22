@@ -47,7 +47,7 @@ export default function EventHalls() {
           {halls.map((hall) => (
             <div
               key={hall.name}
-              className="py-4 pr-8 pl-4 border-l-2 border-gold"
+              className=" pl-4 border-l-2 border-gold"
             >
               <p className="text-gold text-[16px] font-semibold tracking-[0.2em] uppercase mb-[2px]">
                 {hall.type}

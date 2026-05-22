@@ -54,10 +54,9 @@ const features = [
 
 export default function KaraokeLounge() {
   return (
-    <section id="karaoke" className="bg-hotel-cream">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        {/* Image */}
-        <div className="relative h-[500px] md:h-auto overflow-hidden">
+    <section id="karaoke" className="bg-[#F0EBE0]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 h-auto md:h-[800px]">
+        <div className="relative h-[500px] md:h-full overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80"
             alt="Karaoke & Lounge"
@@ -67,44 +66,43 @@ export default function KaraokeLounge() {
           />
         </div>
 
-        {/* Text */}
-        <div className="px-12 md:px-[8%] py-16 flex flex-col justify-center">
-          <p className="text-gold text-xs tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
-            Karaoke &amp; Lounge
-          </p>
-          <h2
-            className="text-hotel-dark text-3xl md:text-4xl mb-6"
-            style={{ fontFamily: "var(--font-playfair), serif", fontStyle: "italic" }}
-          >
-            Karaoke &amp; Lounge
-          </h2>
-          <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-3">
-            Karaoke &amp; Lounge нь хөгжим, амралт, зугаа цэнгэлийг нэг дор
-            хослуулсан орчин үеийн тав тухтай space юм. Найз нөхөд, хамт
-            олонтойгоо хөгжилдэх, стресс тайлах, эсвэл зугаар л тайван сууж
-            цагийг өнгөрүүлэхэд төгс тохирно.
-          </p>
-          <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-10">
-            Чанартай sound system бүхий private каraoke өрөөнүүд болон тухтай
-            lounge хэсэг нь танд өөр өөр vibe-ийг нэг дор мэдрүүлнэ. Уух
-            зүйлс, хөнгөн зууштайгаа хамт мартагдашгүй үдшийг бүтээгээрэй.
-          </p>
+        <div className="pt-[73px] pl-20 flex flex-col justify-between">
+          <div className="flex justify-between flex-col w-[560px] h-[640px]">
+            <p className="text-gold text-[16px] font-normal font-roboto-slab tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
+              Karaoke &amp; Lounge
+            </p>
+            <h2 className="text-hotel-dark text-3xl md:text-[40px] font-cormorant italic font-semibold pb-[24px]">
+              Karaoke &amp; Lounge
+            </h2>
+            <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-3">
+              Karaoke &amp; Lounge нь хөгжим, амралт, зугаа цэнгэлийг нэг дор
+              хослуулсан орчин үеийн тав тухтай space юм. Найз нөхөд, хамт
+              олонтойгоо хөгжилдэх, стресс тайлах, эсвэл зугаар л тайван сууж
+              цагийг өнгөрүүлэхэд төгс тохирно.
+            </p>
+            <p className="text-hotel-charcoal/65 text-sm leading-relaxed">
+              Чанартай sound system бүхий private каraoke өрөөнүүд болон тухтай
+              lounge хэсэг нь танд өөр өөр vibe-ийг нэг дор мэдрүүлнэ. Уух
+              зүйлс, хөнгөн зууштайгаа хамт мартагдашгүй үдшийг бүтээгээрэй.
+            </p>
 
-          <ul className="grid grid-cols-1 gap-3 mb-10">
-            {features.map((f) => (
-              <li key={f.label} className="flex items-center gap-3 text-hotel-charcoal/70 text-sm">
-                <span className="text-gold shrink-0">{f.icon}</span>
-                {f.label}
-              </li>
-            ))}
-          </ul>
-
-          <button className="border border-hotel-dark text-hotel-dark hover:bg-hotel-dark hover:text-white text-xs tracking-[0.2em] uppercase px-8 py-3 transition-colors inline-flex items-center gap-3 self-start">
-            Дэлгэрэнгүй унших
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
+            <ul className="grid grid-cols-1 py-10 gap-y-3 mb-8">
+              {features.map((f) => (
+                <li key={f.label} className="flex items-center gap-2 text-hotel-charcoal/70 text-sm">
+                  <span className="text-gold shrink-0">{f.icon}</span>
+                  {f.label}
+                </li>
+              ))}
+            </ul>
+            <div>
+              <button className="border border-hotel-dark text-hotel-dark hover:bg-hotel-dark hover:text-white text-xs tracking-[0.2em] uppercase px-8 py-3 transition-colors flex items-center gap-3">
+              Дэлгэрэнгүй унших
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
