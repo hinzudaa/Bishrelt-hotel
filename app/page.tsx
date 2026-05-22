@@ -17,7 +17,7 @@ export default function HomePage() {
         <Gallery />
         <Rooms />
         <Restaurant />
-        {/* <EventHalls /> */}
+        <EventHalls />
         {/* <KaraokeLounge /> */}
         {/* <Quote /> */}
       </main>
