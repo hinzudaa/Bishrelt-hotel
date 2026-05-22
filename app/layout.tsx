@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Raleway, Cormorant } from "next/font/google";
+import { Geist, Raleway, Cormorant, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
 const geist = Geist({
@@ -20,6 +20,12 @@ const cormorant = Cormorant({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const robotoSlab = Roboto_Slab({
+  variable: "--font-roboto-slab",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Bishrelt Hotel — Тансаг Байдлын Шинэ Түшиг",
   description:
@@ -32,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="mn" className={`${geist.variable} ${raleway.variable} ${cormorant.variable}`}>
+    <html lang="mn" className={`${geist.variable} ${raleway.variable} ${cormorant.variable} ${robotoSlab.variable}`}>
       <body className="min-h-full font-raleway">{children}</body>
     </html>
   );

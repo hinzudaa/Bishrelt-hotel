@@ -34,17 +34,13 @@ const features = [
 
 export default function Restaurant() {
   return (
-    <section id="restaurant" className="bg-hotel-cream">
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        {/* Text */}
-        <div className="px-12 md:px-[8%] py-16 flex flex-col justify-center">
-          <p className="text-gold text-xs tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
+    <section id="restaurant" className="bg-[#F0EBE0]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 h-auto md:h-[800px]">
+        <div className="py-14 pr-20 flex flex-col justify-center">
+          <p className="text-[#C9A961] font-normal text-[16px] font-roboto-slab tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
             Restaurant
           </p>
-          <h2
-            className="text-hotel-dark text-3xl md:text-4xl mb-6"
-            style={{ fontFamily: "var(--font-playfair), serif", fontStyle: "italic" }}
-          >
+          <h2 className="text-hotel-dark text-3xl md:text-4xl mb-6 font-cormorant italic">
             Embassy Restaurant
           </h2>
           <p className="text-hotel-charcoal/65 text-sm leading-relaxed mb-10">
@@ -74,14 +70,13 @@ export default function Restaurant() {
           </button>
         </div>
 
-        {/* Image */}
-        <div className="relative h-[500px] md:h-auto overflow-hidden">
+        <div className="relative h-[500px] md:h-full overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"
             alt="Embassy Restaurant"
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, 720px"
           />
         </div>
       </div>

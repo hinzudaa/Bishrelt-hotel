@@ -15,8 +15,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <Gallery />
-        {/* <Rooms /> */}
-        {/* <Restaurant /> */}
+        <Rooms />
+        <Restaurant />
         {/* <EventHalls /> */}
         {/* <KaraokeLounge /> */}
         {/* <Quote /> */}
