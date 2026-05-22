@@ -10,7 +10,7 @@ const rooms = [
       "Deluxe King Room нь тав тух, орчин үеийн шийдлийг төгс хослуулсан өрөө бөгөөд аялагч, бизнесийн зочдод зориулсан хамгийн тохиромжтой сонголт юм. Уужим талбай, зөөлөн гэрэлтүүлэг, минимал тансаг интерьер нь таныг тайвшруулж, амралтыг илүү үнэ цэнтэй болгоно. King size ор нь дээд зэргийн матрас, зөөлөн даавуугаар бүрдсэн тул гүн нойр авч, бүрэн амрах боломжийг бүрдүүлнэ. Өрөөний ухаалаг зохион байгуулалт, цэвэрхэн дизайн нь ажлын болон амралтын аль алинд төгс зохицно.",
     features: ["King-Size Bed", "City View", "Private Jacuzzi", "Flat-Screen TV", "Mini Bar", "Free High-Speed WiFi"],
     price: "₮250,000",
-    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+    image: "/room/image.png",
   },
   {
     name: "Junior Suite",
@@ -52,6 +52,7 @@ export default function Rooms() {
             fill
             className="object-cover transition-all duration-500"
             sizes="(max-width: 768px) 100vw, 640px"
+            quality={100}
           />
         </div>
 
