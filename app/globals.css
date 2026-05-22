@@ -34,3 +34,7 @@ html {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+.animate-gallery-marquee {
+  animation: gallery-slide 24s linear infinite;
+}

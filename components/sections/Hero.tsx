@@ -30,7 +30,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-linear-to-b from-hotel-dark/60 via-hotel-dark/30 to-hotel-dark/70" />
 
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-8 flex flex-col">
+      <div className="relative z-10 h-full max-w-7xl mx-auto flex flex-col">
         <div className="flex-1 flex flex-col justify-center pt-20">
           <h1 className="text-white font-cormorant italic text-[72px] font-bold leading-20 tracking-[-1.8px]">
             <span className="text-gold">Тансаг</span> Байдлын

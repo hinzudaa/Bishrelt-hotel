@@ -38,42 +38,32 @@ const slides: SlideUnit[] = [
   },
 ];
 
-const CELL_W = 340;
-const CELL_H = 240;
-const GAP = 3;
-const UNIT_W = CELL_W * 2 + GAP * 3 + CELL_W * 2;
-
-function SlideUnitBlock({ unit }: { unit: SlideUnit }) {
+function LeftHalf({ unit }: { unit: SlideUnit }) {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: `${CELL_W}px ${CELL_W}px ${CELL_W}px ${CELL_W}px`,
-        gridTemplateRows: `${CELL_H}px ${CELL_H}px`,
-        gap: `${GAP}px`,
-        flexShrink: 0,
-      }}
-    >
-      {/* Top-left: 2 photos side by side */}
-      <div className="relative overflow-hidden" style={{ gridColumn: "1", gridRow: "1" }}>
+    <div className="grid grid-cols-[340px_340px] grid-rows-[240px_240px] gap-2 shrink-0">
+      <div className="relative overflow-hidden col-start-1 row-start-1">
         <Image src={unit.p1.src} alt={unit.p1.alt} fill className="object-cover" sizes="340px" />
       </div>
-      <div className="relative overflow-hidden" style={{ gridColumn: "2", gridRow: "1" }}>
+      <div className="relative overflow-hidden col-start-2 row-start-1">
         <Image src={unit.p2.src} alt={unit.p2.alt} fill className="object-cover" sizes="340px" />
       </div>
-      {/* Bottom-left: 1 wide photo spanning 2 cols */}
-      <div className="relative overflow-hidden" style={{ gridColumn: "1 / 3", gridRow: "2" }}>
-        <Image src={unit.p3.src} alt={unit.p3.alt} fill className="object-cover" sizes="683px" />
+      <div className="relative overflow-hidden col-span-2 row-start-2">
+        <Image src={unit.p3.src} alt={unit.p3.alt} fill className="object-cover" sizes="688px" />
       </div>
-      {/* Top-right: 1 wide photo spanning 2 cols */}
-      <div className="relative overflow-hidden" style={{ gridColumn: "3 / 5", gridRow: "1" }}>
-        <Image src={unit.p4.src} alt={unit.p4.alt} fill className="object-cover" sizes="683px" />
+    </div>
+  );
+}
+
+function RightHalf({ unit }: { unit: SlideUnit }) {
+  return (
+    <div className="grid grid-cols-[340px_340px] grid-rows-[240px_240px] gap-2 shrink-0">
+      <div className="relative overflow-hidden col-span-2 row-start-1">
+        <Image src={unit.p4.src} alt={unit.p4.alt} fill className="object-cover" sizes="688px" />
       </div>
-      {/* Bottom-right: 2 photos side by side */}
-      <div className="relative overflow-hidden" style={{ gridColumn: "3", gridRow: "2" }}>
+      <div className="relative overflow-hidden col-start-1 row-start-2">
         <Image src={unit.p5.src} alt={unit.p5.alt} fill className="object-cover" sizes="340px" />
       </div>
-      <div className="relative overflow-hidden" style={{ gridColumn: "4", gridRow: "2" }}>
+      <div className="relative overflow-hidden col-start-2 row-start-2">
         <Image src={unit.p6.src} alt={unit.p6.alt} fill className="object-cover" sizes="340px" />
       </div>
     </div>
@@ -82,46 +72,28 @@ function SlideUnitBlock({ unit }: { unit: SlideUnit }) {
 
 export default function Gallery() {
   const allSlides = [...slides, ...slides];
-  const trackWidth = slides.length * (UNIT_W + GAP);
-  const duration = slides.length * 8;
 
   return (
-    <section className="bg-hotel-cream py-14 overflow-hidden">
-      {/* Title */}
+    <section className="bg-[#F0EBE0] py-14 overflow-hidden">
       <div className="text-center mb-8 px-6">
-        <h2
-          className="text-hotel-dark text-2xl md:text-3xl leading-snug"
-          style={{ fontFamily: "var(--font-playfair), serif", fontStyle: "italic" }}
-        >
+        <h2 className="text-black text-2xl md:text-[28px] leading-snug font-semibold font-cormorant italic">
           1994 оноос хойш жинхэнэ Улаанбаатарын дэгжин байдал
         </h2>
-        <div className="mt-4 mx-auto w-28 h-px bg-gold" />
+        <div className="mt-4 mx-auto w-[346px] h-[2px] bg-[#C9A961]" />
       </div>
 
-      {/* Marquee track */}
       <div className="overflow-hidden">
-        <div
-          style={{
-            display: "flex",
-            gap: `${GAP}px`,
-            width: `${trackWidth * 2 + GAP}px`,
-            animation: `gallery-slide ${duration}s linear infinite`,
-          }}
-          onMouseEnter={(e) => ((e.currentTarget as HTMLDivElement).style.animationPlayState = "paused")}
-          onMouseLeave={(e) => ((e.currentTarget as HTMLDivElement).style.animationPlayState = "running")}
-        >
-          {allSlides.map((unit, i) => (
-            <SlideUnitBlock key={i} unit={unit} />
-          ))}
+        <div className="flex gap-4 w-[8448px] animate-gallery-marquee hover:[animation-play-state:paused]">
+          {allSlides.flatMap((unit, i) => [
+            <LeftHalf key={`l${i}`} unit={unit} />,
+            <RightHalf key={`r${i}`} unit={unit} />,
+          ])}
         </div>
       </div>
 
-      {/* Description */}
-      <div className="max-w-[1300px] mx-auto mt-6 px-10">
-        <p className="text-hotel-charcoal/65 text-sm leading-relaxed max-w-2xl">
-          Та ирсэн мөчөөс эхлэн хүрээлэн буй орчны зохицол, материалын тансаг
-          байдал, нарийн ширийн зүйл бүрт илэрсэн гар урлалын гайхалтай чанарт
-          сэтгэл татагдах болно.
+      <div className="max-w-7xl mx-auto mt-6">
+        <p className="text-black text-[16px] leading-relaxed font-light ">
+          Та ирсэн мөчөөс эхлэн хүрээлэн буй орчны зохицол, материалын тансаг байдал, нарийн ширийн зүйл бүрт илэрсэн гар урлалын гайхалтай чанарт сэтгэл татагдах болно.
         </p>
       </div>
     </section>

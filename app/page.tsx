@@ -14,12 +14,12 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        {/* <Gallery />
-        <Rooms />
-        <Restaurant />
-        <EventHalls />
-        <KaraokeLounge />
-        <Quote /> */}
+        <Gallery />
+        {/* <Rooms /> */}
+        {/* <Restaurant /> */}
+        {/* <EventHalls /> */}
+        {/* <KaraokeLounge /> */}
+        {/* <Quote /> */}
       </main>
       <Footer />
     </>

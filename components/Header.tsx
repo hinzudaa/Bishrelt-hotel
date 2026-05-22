@@ -30,7 +30,7 @@ export default function Header() {
       }`}
     >
       <nav>
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between py-4 sm:py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-0 flex items-center justify-between py-4 sm:py-5">
           <Link href="/">
             <Image src='/images/logo.svg' width={90} height={38} alt="Bishrelt Hotel" className="sm:w-27.5 sm:h-11.5" />
           </Link>
