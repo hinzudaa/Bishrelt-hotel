@@ -20,7 +20,7 @@ const halls = [
 
 export default function EventHalls() {
   return (
-    <section id="events" className="relative overflow-hidden min-h-[800px]">
+    <section id="events" className="relative overflow-hidden min-h-[500px] md:min-h-[800px]">
       <Image
         src="/event/image.png"
         alt="Event Hall"
@@ -30,7 +30,7 @@ export default function EventHalls() {
       />
       <div className="absolute inset-0 bg-hotel-dark/65" />
 
-      <div className="relative max-w-7xl mx-auto h-full min-h-[680px] flex flex-col justify-between pt-[240px]">
+      <div className="relative max-w-7xl mx-auto h-full min-h-0 md:min-h-[680px] flex flex-col justify-between pt-24 md:pt-[240px] px-6 md:px-0 pb-10 md:pb-0 gap-8 md:gap-0">
         <div className="max-w-[632px]">
           <p className="text-[#C9A961] text-[16px] font-normal font-roboto-slab tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
             Event Halls
@@ -43,7 +43,7 @@ export default function EventHalls() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-43">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-43">
           {halls.map((hall) => (
             <div
               key={hall.name}

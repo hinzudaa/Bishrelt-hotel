@@ -56,7 +56,7 @@ export default function KaraokeLounge() {
   return (
     <section id="karaoke" className="bg-[#F0EBE0]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 h-auto md:h-[800px]">
-        <div className="relative h-[500px] md:h-full overflow-hidden">
+        <div className="relative h-[500px] md:h-full overflow-hidden order-2 md:order-1">
           <Image
             src="/karaoke/image.jpg"
             alt="Karaoke & Lounge"
@@ -66,7 +66,7 @@ export default function KaraokeLounge() {
           />
         </div>
 
-        <div className="pt-10 md:pt-[73px] md:pl-20 flex flex-col justify-between">
+        <div className="pt-10 px-6 md:px-0 md:pt-[73px] md:pl-20 flex flex-col justify-between order-1 md:order-2 md:pb-0 pb-10">
           <div className="flex justify-between flex-col w-full h-auto md:h-[640px]">
             <p className="text-gold text-[16px] font-normal font-roboto-slab tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
               Karaoke &amp; Lounge

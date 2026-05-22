@@ -56,7 +56,7 @@ export default function Rooms() {
           />
         </div>
 
-        <div className="pt-14 pl-20 flex flex-col justify-between w-full border-b-2 border-[#C9A961]">
+        <div className="pt-8 px-6 pb-6 md:pt-14 md:pl-20 md:pr-0 md:pb-0 flex flex-col justify-between w-full">
           <div>
             <p className="text-gold font-roboto-slab text-[16px] tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
               Rooms &amp; Suits
@@ -76,12 +76,12 @@ export default function Rooms() {
                 </li>
               ))}
             </ul>
-            <div className="flex flex-row justify-between items-center mt-[40px]">
-              <p className="text-[#C9A961] text-[28px] font-roboto-slab font-normal">
+            <div className="flex md:flex-row flex-col justify-between items-start md:items-center mt-[40px]">
+              <p className="text-[#C9A961] text-[28px] font-roboto-slab font-normal mb-4 md:mb-0">
                 {room.price}
               </p>
 
-              <button className="border border-hotel-dark text-hotel-dark hover:bg-hotel-dark hover:text-white text-xs tracking-[0.2em] uppercase px-8 py-3 transition-colors flex items-center gap-3">
+              <button className="border md:mb-0 mb-10 border-hotel-dark text-hotel-dark hover:bg-hotel-dark hover:text-white text-xs tracking-[0.2em] uppercase px-8 py-3 transition-colors flex items-center gap-3">
                 Дэлгэрэнгүй унших
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -91,7 +91,7 @@ export default function Rooms() {
           </div>
       
 
-          <div className="flex items-center justify-between pt-6 pb-[80px] border-t border-hotel-charcoal/15">
+          <div className="flex items-center justify-between pt-6 md:pb-[80px] pb-5 border-t border-hotel-charcoal/15">
             <button
               onClick={() => setCurrent((c) => (c - 1 + rooms.length) % rooms.length)}
               className="flex items-center gap-2 text-gray-900  hover:text-gold text-[16px] font-light transition-colors"

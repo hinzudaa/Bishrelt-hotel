@@ -138,7 +138,7 @@ export default function Gallery() {
         <h2 className="text-black text-2xl md:text-[28px] leading-snug font-semibold font-cormorant italic">
           1994 оноос хойш жинхэнэ Улаанбаатарын дэгжин байдал
         </h2>
-        <div className="mt-4 mx-auto w-[346px] h-[2px] bg-[#C9A961]" />
+        <div className="mt-4 mx-auto w-full max-w-[346px] h-[2px] bg-[#C9A961]" />
       </div>
 
       <div className="overflow-hidden">
@@ -151,8 +151,8 @@ export default function Gallery() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-6">
-        <p className="text-black text-[16px] leading-relaxed font-light ">
+      <div className="max-w-7xl mx-auto mt-6 px-6 md:px-0">
+        <p className="text-black text-[16px] leading-relaxed font-light  text-center">
           Та ирсэн мөчөөс эхлэн хүрээлэн буй орчны зохицол, материалын тансаг
           байдал, нарийн ширийн зүйл бүрт илэрсэн гар урлалын гайхалтай чанарт
           сэтгэл татагдах болно.
