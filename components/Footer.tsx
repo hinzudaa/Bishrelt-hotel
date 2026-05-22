@@ -12,7 +12,7 @@ const navLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#141414] text-white">
-      <div className="max-w-[1300px] mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
           <div className="flex flex-col items-start mb-6">
             <Image src="/images/footerlogo.svg" alt="logo" width={143} height={100}/>
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-10 py-5 max-w-[1300px] mx-auto">
+      <div className="border-t border-white/10 px-10 py-5 max-w-7xl mx-auto">
         <p className="text-white/25 text-xs">
           © 2026 Bishrelt Hotel. All rights reserved.
         </p>

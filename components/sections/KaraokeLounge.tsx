@@ -66,8 +66,8 @@ export default function KaraokeLounge() {
           />
         </div>
 
-        <div className="pt-[73px] pl-20 flex flex-col justify-between">
-          <div className="flex justify-between flex-col w-[560px] h-[640px]">
+        <div className="px-6 pt-10 md:pt-[73px] md:pl-20 flex flex-col justify-between">
+          <div className="flex justify-between flex-col w-full md:w-[560px] h-auto md:h-[640px]">
             <p className="text-gold text-[16px] font-normal font-roboto-slab tracking-[0.2em] uppercase border-l-2 border-gold pl-3 mb-5">
               Karaoke &amp; Lounge
             </p>
