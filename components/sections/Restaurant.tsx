@@ -70,15 +70,16 @@ export default function Restaurant() {
           </button>
         </div>
 
-        <div className="relative h-[500px] md:h-full overflow-hidden">
-          <Image
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"
-            alt="Embassy Restaurant"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 720px"
-          />
-        </div>
+         <div className="relative h-[500px] md:h-full overflow-hidden">
+                <Image
+                  src="/restaurant/image.jpg"
+                  alt="restaurant"
+                  fill
+                  className="object-cover transition-all duration-500"
+                  sizes="(max-width: 768px) 100vw, 640px"
+                  quality={100}
+                />
+              </div>
       </div>
     </section>
   );

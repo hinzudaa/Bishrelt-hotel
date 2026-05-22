@@ -22,7 +22,7 @@ export default function EventHalls() {
   return (
     <section id="events" className="relative overflow-hidden min-h-[800px]">
       <Image
-        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1920&q=80"
+        src="/event/image.png"
         alt="Event Hall"
         fill
         className="object-cover"
