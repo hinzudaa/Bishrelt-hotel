@@ -103,11 +103,11 @@ function MiddleHalf({ unit }: { unit: SlideUnit }) {
           src={unit.p9.src}
           alt={unit.p9.alt}
           fill
-          className="object-cover"
+          className="object-cover "
           sizes="500px"
         />
       </div>
-      <div className="relative overflow-hidden col-start-1 row-start-2">
+      <div className="relative overflow-hidden col-start-1 row-start-2 ">
         <Image
           src={unit.p8.src}
           alt={unit.p8.alt}
@@ -142,7 +142,7 @@ export default function Gallery() {
       </div>
 
       <div className="overflow-hidden">
-        <div className="flex gap-4 w-[3144px] animate-gallery-marquee hover:[animation-play-state:paused]">
+        <div className="flex gap-4 w-[3144px] animate-gallery-marquee hover:[animation-play-state:paused ]">
           {allSlides.flatMap((unit, i) => [
             <LeftHalf key={`l${i}`} unit={unit} />,
             <MiddleHalf key={`m${i}`} unit={unit} />,

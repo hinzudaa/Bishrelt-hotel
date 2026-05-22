@@ -124,7 +124,7 @@ export default function Restaurant() {
             src="/restaurant/image.jpg"
             alt="restaurant"
             fill
-            className="object-cover transition-all duration-500"
+            className="object-cover transition-all duration-500 md:px-0 px-2 md:rounded-none rounded-2xl"
             sizes="(max-width: 768px) 100vw, 640px"
             quality={100}
           />

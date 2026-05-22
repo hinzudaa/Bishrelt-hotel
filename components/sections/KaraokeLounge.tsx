@@ -61,7 +61,7 @@ export default function KaraokeLounge() {
             src="/karaoke/image.jpg"
             alt="Karaoke & Lounge"
             fill
-            className="object-cover"
+            className="object-cover md:px-0 px-2 md:rounded-none rounded-2xl"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
