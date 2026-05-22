@@ -16,15 +16,15 @@ type SlideUnit = {
 
 const slides: SlideUnit[] = [
   {
-    p1: { src: "/karaoke/image9.png", alt: "Hotel grand lobby" },
-    p2: { src: "/karaoke/image1.jpg", alt: "Elegant salon" },
-    p3: { src: "/karaoke/image2.jpg", alt: "Ornate entrance" },
-    p4: { src: "/karaoke/image3.jpg", alt: "Grand marble lobby" },
-    p5: { src: "/karaoke/image4.jpg", alt: "Lobby with orchids" },
-    p6: { src: "/karaoke/image5.jpg", alt: "Hotel interior" },
-    p7: { src: "/karaoke/image6.jpg", alt: "Hotel interior" },
-    p8: { src: "/karaoke/image7.jpg", alt: "Hotel interior" },
-    p9: { src: "/karaoke/image8.jpg", alt: "Hotel interior" },
+    p1: { src: "/gallery/image9.png", alt: "Hotel grand lobby" },
+    p2: { src: "/gallery/image1.jpg", alt: "Elegant salon" },
+    p3: { src: "/gallery/image2.jpg", alt: "Ornate entrance" },
+    p4: { src: "/gallery/image3.jpg", alt: "Grand marble lobby" },
+    p5: { src: "/gallery/image4.jpg", alt: "Lobby with orchids" },
+    p6: { src: "/gallery/image5.jpg", alt: "Hotel interior" },
+    p7: { src: "/gallery/image6.jpg", alt: "Hotel interior" },
+    p8: { src: "/gallery/image7.jpg", alt: "Hotel interior" },
+    p9: { src: "/gallery/image8.jpg", alt: "Hotel interior" },
   },
 ];
 
