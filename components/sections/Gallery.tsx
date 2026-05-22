@@ -30,14 +30,14 @@ const slides: SlideUnit[] = [
 
 function LeftHalf({ unit }: { unit: SlideUnit }) {
   return (
-    <div className="grid grid-cols-[340px_340px] grid-rows-[240px_240px] gap-2 shrink-0">
+    <div className="grid grid-cols-[250px_250px] grid-rows-[240px_240px] gap-2 shrink-0">
       <div className="relative overflow-hidden col-start-1 row-start-1">
         <Image
           src={unit.p1.src}
           alt={unit.p1.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
       <div className="relative overflow-hidden col-start-2 row-start-1">
@@ -46,7 +46,7 @@ function LeftHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p3.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
       <div className="relative overflow-hidden col-span-2 row-start-2">
@@ -55,7 +55,7 @@ function LeftHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p2.alt}
           fill
           className="object-cover"
-          sizes="688px"
+          sizes="500px"
         />
       </div>
     </div>
@@ -64,14 +64,14 @@ function LeftHalf({ unit }: { unit: SlideUnit }) {
 
 function RightHalf({ unit }: { unit: SlideUnit }) {
   return (
-    <div className="grid grid-cols-[340px_340px] grid-rows-[240px_240px] gap-2 shrink-0">
+    <div className="grid grid-cols-[250px_250px] grid-rows-[240px_240px] gap-2 shrink-0">
       <div className="relative overflow-hidden col-span-2 row-start-1">
         <Image
           src={unit.p6.src}
           alt={unit.p6.alt}
           fill
           className="object-cover"
-          sizes="688px"
+          sizes="500px"
         />
       </div>
       <div className="relative overflow-hidden col-start-1 row-start-2">
@@ -80,7 +80,7 @@ function RightHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p5.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
       <div className="relative overflow-hidden col-start-2 row-start-2">
@@ -89,7 +89,7 @@ function RightHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p4.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
     </div>
@@ -97,14 +97,14 @@ function RightHalf({ unit }: { unit: SlideUnit }) {
 }
 function MiddleHalf({ unit }: { unit: SlideUnit }) {
   return (
-    <div className="grid grid-cols-[340px_340px] grid-rows-[240px_240px] gap-2 shrink-0">
+    <div className="grid grid-cols-[250px_250px] grid-rows-[240px_240px] gap-2 shrink-0">
       <div className="relative overflow-hidden col-span-2 row-start-1">
         <Image
           src={unit.p9.src}
           alt={unit.p9.alt}
           fill
           className="object-cover"
-          sizes="688px"
+          sizes="500px"
         />
       </div>
       <div className="relative overflow-hidden col-start-1 row-start-2">
@@ -113,7 +113,7 @@ function MiddleHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p8.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
       <div className="relative overflow-hidden col-start-2 row-start-2">
@@ -122,7 +122,7 @@ function MiddleHalf({ unit }: { unit: SlideUnit }) {
           alt={unit.p7.alt}
           fill
           className="object-cover"
-          sizes="340px"
+          sizes="250px"
         />
       </div>
     </div>
@@ -142,7 +142,7 @@ export default function Gallery() {
       </div>
 
       <div className="overflow-hidden">
-        <div className="flex gap-4 w-[4224px] animate-gallery-marquee hover:[animation-play-state:paused]">
+        <div className="flex gap-4 w-[3144px] animate-gallery-marquee hover:[animation-play-state:paused]">
           {allSlides.flatMap((unit, i) => [
             <LeftHalf key={`l${i}`} unit={unit} />,
             <MiddleHalf key={`m${i}`} unit={unit} />,
