@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Room } from "../../types/data";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
@@ -67,9 +68,12 @@ export default function RoomCard({ room, lang, gridDict, cardDict }: Props) {
           <button className="flex-1 bg-gold text-gray-900 text-[10px] font-normal tracking-[0.18em] uppercase py-2.5 hover:bg-gold-dark transition-colors flex items-center justify-center gap-2">
             {cardDict.book}
           </button>
-          <button className="flex-1 border border-gray-500 font-normal text-gray-500 text-[10px] tracking-[0.18em] uppercase py-2.5 hover:border-hotel-dark hover:text-hotel-dark transition-colors">
+          <Link
+            href={`/${lang}/rooms/${room.id}`}
+            className="flex-1 border border-gray-500 font-normal text-gray-500 text-[10px] tracking-[0.18em] uppercase py-2.5 hover:border-hotel-dark hover:text-hotel-dark transition-colors flex items-center justify-center"
+          >
             {cardDict.details}
-          </button>
+          </Link>
         </div>
       </div>
     </div>

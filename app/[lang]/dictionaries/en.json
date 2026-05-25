@@ -148,6 +148,38 @@
       { "label": "Book a Stay", "href": "#booking" }
     ]
   },
+  "roomDetail": {
+    "breadcrumbRooms": "Rooms",
+    "aboutLabel": "ABOUT THE ROOM",
+    "amenitiesLabel": "ROOM AMENITIES",
+    "galleryLabel": "GALLERY",
+    "similarLabel": "SIMILAR ROOMS",
+    "checkIn": "CHECK IN",
+    "checkOut": "CHECK OUT",
+    "roomType": "ROOM TYPE",
+    "guests": "GUESTS",
+    "bookNow": "BOOK NOW",
+    "bookingNote": "All rates include breakfast for two guests",
+    "perNight": "/ night",
+    "viewDetails": "VIEW DETAILS",
+    "amenities": {
+      "kingSizeBed": "King-Size Bed",
+      "twinBeds": "Twin Beds",
+      "privateJacuzzi": "Private Jacuzzi",
+      "wifi": "High-Speed WiFi",
+      "smartTV": "8K Smart TV",
+      "miniBar": "Premium Mini Bar",
+      "cityView": "Panoramic City View",
+      "panoramaView": "Panoramic View",
+      "safe": "In-Room Safe",
+      "marbleBathroom": "Marble Bathroom",
+      "climateControl": "Climate Control",
+      "roomService24": "24hr Room Service",
+      "workDesk": "Work Desk",
+      "privateKitchen": "Private Kitchen",
+      "butlerService": "Butler Service"
+    }
+  },
   "roomsPage": {
     "hero": {
       "tagline": "Our Rooms · Accommodation",

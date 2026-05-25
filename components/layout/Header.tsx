@@ -25,7 +25,6 @@ export default function Header({ dict, lang }: Props) {
     { label: dict.rooms, href: `/${lang}/rooms` },
     { label: dict.restaurant, href: "#restaurant" },
     { label: dict.events, href: "#events" },
-    { label: dict.karaoke, href: "#karaoke" },
   ];
 
   useEffect(() => {

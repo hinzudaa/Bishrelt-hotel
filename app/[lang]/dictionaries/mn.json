@@ -148,6 +148,38 @@
       { "label": "Захиалга өгөх", "href": "#booking" }
     ]
   },
+  "roomDetail": {
+    "breadcrumbRooms": "Өрөөнүүд",
+    "aboutLabel": "ӨРӨӨНИЙ ТУХАЙ",
+    "amenitiesLabel": "ӨРӨӨНИЙ ТУХАЙ",
+    "galleryLabel": "Галлерей",
+    "similarLabel": "Бусад өрөөний сонголтууд",
+    "checkIn": "CHECK IN",
+    "checkOut": "CHECK OUT",
+    "roomType": "ӨРӨӨНИЙ ТӨРӨЛ",
+    "guests": "ЗОЧНЫ ТОО",
+    "bookNow": "ЗАХИАЛАХ",
+    "bookingNote": "48 цагийн өмнө үнэ төлбөргүй цуцлах боломжтой",
+    "perNight": "/ шөнө",
+    "viewDetails": "ДЭЛГЭРЭНГҮЙ",
+    "amenities": {
+      "kingSizeBed": "King-Size Ор",
+      "twinBeds": "Хос Ор",
+      "privateJacuzzi": "Хувийн Жакузи",
+      "wifi": "Хурдан WiFi",
+      "smartTV": "8K Ухаалаг ТВ",
+      "miniBar": "Дээд Зэрэглэлийн Minibar",
+      "cityView": "Хотын Панорама Үзэмж",
+      "panoramaView": "Панорама Үзэмж",
+      "safe": "Өрөөний Сейф",
+      "marbleBathroom": "Мармарт Угаалгын Өрөо",
+      "climateControl": "Климат Контрол",
+      "roomService24": "24 Цагийн Room Service",
+      "workDesk": "Ажлын Ширээ",
+      "privateKitchen": "Хувийн Гал Тогоо",
+      "butlerService": "Butler Үйлчилгээ"
+    }
+  },
   "roomsPage": {
     "hero": {
       "tagline": "Манай өрөөнүүд · Accommodation",
