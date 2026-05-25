@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { roomsData, type Category } from "@/components/rooms/data";
+import { roomsData, type Category } from "@/types/data";
 import RoomsHero from "@/components/rooms/RoomsHero";
 import RoomsGrid from "@/components/rooms/RoomsGrid";
 import RoomsCTA from "@/components/rooms/RoomsCTA";

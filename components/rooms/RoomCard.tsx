@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Room } from "./data";
+import type { Room } from "../../types/data";
 
 export default function RoomCard({ room }: { room: Room }) {
   return (

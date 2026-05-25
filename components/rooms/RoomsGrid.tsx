@@ -1,4 +1,4 @@
-import type { Room } from "./data";
+import type { Room } from "../../types/data";
 import RoomCard from "./RoomCard";
 
 export default function RoomsGrid({ rooms }: { rooms: Room[] }) {

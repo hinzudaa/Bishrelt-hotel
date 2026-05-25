@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CATEGORIES, type Category } from "./data";
+import { CATEGORIES, type Category } from "../../types/data";
 
 type Props = {
   activeTab: Category;
