@@ -35,28 +35,56 @@
       {
         "name": "Deluxe King Room",
         "description": "The Deluxe King Room perfectly blends comfort and modern design — the ideal choice for travelers and business guests. Soft lighting, a minimalist luxurious interior, and a king-size bed with premium bedding ensure deep rest.",
-        "features": ["King-Size Bed", "City View", "Private Jacuzzi", "Flat-Screen TV", "Mini Bar", "Free High-Speed WiFi"],
+        "features": [
+          "King-Size Bed",
+          "City View",
+          "Private Jacuzzi",
+          "Flat-Screen TV",
+          "Mini Bar",
+          "Free High-Speed WiFi"
+        ],
         "price": "₮250,000",
         "image": "/room/image.png"
       },
       {
         "name": "Junior Suite",
         "description": "The Junior Suite features a separate living room and bedroom in a lavish setting. Enjoy sweeping panoramic city views. The generous space offers complete peace and tranquil rest.",
-        "features": ["King-Size Bed", "City View", "Luxury Bathroom", "Flat-Screen TV", "Mini Bar", "Free High-Speed WiFi"],
+        "features": [
+          "King-Size Bed",
+          "City View",
+          "Luxury Bathroom",
+          "Flat-Screen TV",
+          "Mini Bar",
+          "Free High-Speed WiFi"
+        ],
         "price": "₮380,000",
         "image": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80"
       },
       {
         "name": "Executive Suite",
         "description": "The Executive Suite is a luxury suite designed for business guests, featuring a private meeting room and personal chef service. Floor-to-ceiling panoramic windows and state-of-the-art equipment throughout.",
-        "features": ["King-Size Bed", "Panorama View", "Private Jacuzzi", "Home Cinema", "Full Kitchen", "Free High-Speed WiFi"],
+        "features": [
+          "King-Size Bed",
+          "Panorama View",
+          "Private Jacuzzi",
+          "Home Cinema",
+          "Full Kitchen",
+          "Free High-Speed WiFi"
+        ],
         "price": "₮550,000",
         "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&q=80"
       },
       {
         "name": "Presidential Suite",
         "description": "Our most prestigious Presidential Suite is designed for chief executives. Featuring a private meeting room, personal chef service, and the pinnacle of luxury on the city's highest floor.",
-        "features": ["King-Size Bed", "Panorama View", "Private Jacuzzi", "Home Cinema", "Private Kitchen", "Butler Service"],
+        "features": [
+          "King-Size Bed",
+          "Panorama View",
+          "Private Jacuzzi",
+          "Home Cinema",
+          "Private Kitchen",
+          "Butler Service"
+        ],
         "price": "₮850,000",
         "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80"
       }
@@ -87,9 +115,21 @@
     "heading": "Grand Event Halls",
     "description": "A perfect setting for weddings, conferences, and every special occasion. Modern equipment, spacious interiors, and professional service — making every moment unforgettable.",
     "halls": [
-      { "type": "Meeting Room", "name": "Crystal Room", "capacity": "10–25 guests" },
-      { "type": "Conference Hall", "name": "Royal Hall", "capacity": "Up to 50 guests" },
-      { "type": "Event Hall", "name": "Diamond Hall", "capacity": "Up to 50 guests" }
+      {
+        "type": "Meeting Room",
+        "name": "Crystal Room",
+        "capacity": "10–25 guests"
+      },
+      {
+        "type": "Conference Hall",
+        "name": "Royal Hall",
+        "capacity": "Up to 50 guests"
+      },
+      {
+        "type": "Event Hall",
+        "name": "Diamond Hall",
+        "capacity": "Up to 50 guests"
+      }
     ],
     "learnMore": "Learn More"
   },
@@ -141,11 +181,26 @@
     "contactLabel": "Contact",
     "copyright": "© 2026 Bishrelt Hotel. All rights reserved.",
     "links": [
-      { "label": "Rooms & Suites", "href": "#rooms" },
-      { "label": "Embassy Restaurant", "href": "#restaurant" },
-      { "label": "Grand Event Halls", "href": "#events" },
-      { "label": "Karaoke & Lounge", "href": "#karaoke" },
-      { "label": "Book a Stay", "href": "#booking" }
+      {
+        "label": "Rooms & Suites",
+        "href": "#rooms"
+      },
+      {
+        "label": "Embassy Restaurant",
+        "href": "#restaurant"
+      },
+      {
+        "label": "Grand Event Halls",
+        "href": "#events"
+      },
+      {
+        "label": "Karaoke & Lounge",
+        "href": "#karaoke"
+      },
+      {
+        "label": "Book a Stay",
+        "href": "#booking"
+      }
     ]
   },
   "roomDetail": {
@@ -178,6 +233,185 @@
       "workDesk": "Work Desk",
       "privateKitchen": "Private Kitchen",
       "butlerService": "Butler Service"
+    }
+  },
+  "restaurantPage": {
+    "hero": {
+      "tagline": "Bishrelt hotel · Fine Dining",
+      "titleGold": "Embassy",
+      "titleNormal": " Restaurant",
+      "subtitle": "An extraordinary culinary journey in the heart of Ulaanbaatar",
+      "bookButton": "RESERVE A TABLE",
+      "menu": "Menu"
+    },
+    "about": {
+      "label": "ABOUT US",
+      "heading": "The Art of",
+      "headingGold": "Fine Dining",
+      "paragraphs": [
+        "Embassy Restaurant бол Bishrelt Hotel-ийн хоол, амтны соёлын зүрх юм — Монгол тал нутгийн уламжлалт амтыг олон улсын түвшинд бэлтгэгдсэн тогооч нарын ур чадвараар орчин үеийн өнгө төрхтэйгөөр дахин бүтээсэн онцгой орон зай.",
+        "Манай сомелье баг Франц, Итали зэрэг хуучин дэлхийн сонгодог дарснаас эхлээд Гүрж, Өмнөд Африк, Шинэ Зеландын шинээр тодорч буй үйлдвэрлэгчдийн бүтээлүүдийг багтаасан 400 гаруй төрлийн дарсны цуглуулгыг бүрдүүлсэн билээ."
+      ],
+      "stats": [
+        {
+          "value": "12",
+          "label": "Онцгой хоолнууд"
+        },
+        {
+          "value": "400",
+          "label": "WINE LABELS"
+        },
+        {
+          "value": "3",
+          "label": "PRIVATE ROOMS"
+        }
+      ]
+    },
+    "features": [
+      {
+        "icon": "cuisine",
+        "title": "Modern Mongolian Cuisine",
+        "desc": "Award-winning dishes that blend local traditions with contemporary European techniques."
+      },
+      {
+        "icon": "wine",
+        "title": "Premium Wine Cellar",
+        "desc": "Over 200 carefully selected labels from the world's finest wine regions."
+      },
+      {
+        "icon": "private",
+        "title": "Private Dining Rooms",
+        "desc": "Exclusive spaces for intimate gatherings, corporate dinners, and special occasions."
+      },
+      {
+        "icon": "hours",
+        "title": "Opening Hours",
+        "hours": [
+          "Breakfast: 07:00 – 10:30",
+          "Lunch: 12:00 – 14:30",
+          "Dinner: 18:00 – 22:00"
+        ]
+      }
+    ],
+    "menu": {
+      "label": "OUR MENU",
+      "heading": "Culinary",
+      "headingGold": "Masterpieces",
+      "items": {
+        "STARTERS": [
+          {
+            "name": "Эмбасси Eggs Benedict",
+            "desc": "Эрүүл тахианы өндөг, гэрийн давсан тарвас, hollandaise",
+            "price": "₮28,000"
+          },
+          {
+            "name": "Улирлын Жимсний Таваг",
+            "desc": "Тропик жимс, тараг, зөгийн бал",
+            "price": "₮18,000"
+          },
+          {
+            "name": "Авокадо Тост",
+            "desc": "Хүчилтөcгөний талх, авокадо, интоор улаан лооль, ногоон навч",
+            "price": "₮22,000"
+          },
+          {
+            "name": "Монгол Цуйван",
+            "desc": "Гараар сунгасан гурилтай хоол, удаан шарсан хонины мах",
+            "price": "₮26,000"
+          },
+          {
+            "name": "Эх тивийн сонголт",
+            "desc": "Гар урлалын талх, боов, чихэр жимс, шантаажны масло",
+            "price": "₮20,000"
+          },
+          {
+            "name": "Эмбасси Бүрэн Өглөөний хоол",
+            "desc": "Сонгосон аргаар хийсэн өндөг, мах, гахайн сарьс, шарсан улаан лооль, мөөг",
+            "price": "₮35,000"
+          }
+        ],
+        "MAIN": [
+          {
+            "name": "Хонины Нуруу",
+            "desc": "Ургамлаар бүрхсэн Монгол хонь, шарсан хэрийн ногоо, шөл",
+            "price": "₮52,000"
+          },
+          {
+            "name": "Цезарь Салат",
+            "desc": "Ромейн ногоо, пармезан, анчоусний заправка, гэрийн хуурсан талх",
+            "price": "₮24,000"
+          },
+          {
+            "name": "Тавганд шарсан Тарвас",
+            "desc": "Атлантын тарвас, лимон соустой, улирлын ногоо",
+            "price": "₮48,000"
+          },
+          {
+            "name": "Үхрийн Филе",
+            "desc": "200г төвийн хэсэг, трюфелийн пюре, улаан дарсны соус",
+            "price": "₮68,000"
+          },
+          {
+            "name": "Мөөгний Ризотто",
+            "desc": "Зэрлэг мөөг, хуучин пармезан, цагаан трюфелийн тос",
+            "price": "₮38,000"
+          },
+          {
+            "name": "Хавчны Шөл",
+            "desc": "Тосон хавчны шөл, коньяк, тархагнай, гэрийн талх",
+            "price": "₮42,000"
+          }
+        ],
+        "DESSERTS": [
+          {
+            "name": "Вагю Стриплоин",
+            "desc": "A4 Японы вагю мах, ясны чөмөг, чимичурри",
+            "price": "₮98,000"
+          },
+          {
+            "name": "Фуа гра Террин",
+            "desc": "Нугасны элэг, бриош, инжирийн чихэр жимс, портын гель",
+            "price": "₮56,000"
+          },
+          {
+            "name": "Бүтэн Шарсан Тэнгисийн Алгана",
+            "desc": "Ургамлаар дүүргэсэн, sauce vierge, зуны ногоо",
+            "price": "₮72,000"
+          },
+          {
+            "name": "Трюфелийн Паста",
+            "desc": "Шинэ тальятелле, хар трюфель, масло, пармезан",
+            "price": "₮58,000"
+          },
+          {
+            "name": "Монгол Хорхог",
+            "desc": "Чулуугаар чанасан уламжлалт хонины мах, улирлын хэрийн ногоо",
+            "price": "₮65,000"
+          },
+          {
+            "name": "Шоколадны Фондан",
+            "desc": "Valrhona 70% хар шоколад, ваниль мөсний зайрмаг",
+            "price": "₮28,000"
+          }
+        ]
+      }
+    },
+    "gallery": {
+      "label": "OUR GALLERY"
+    },
+    "reservation": {
+      "label": "RESERVATIONS",
+      "heading": "Reserve Your",
+      "headingGold": "Table",
+      "desc1": "Төгс зоогийн туршлагыг мэдрэхийн тулд ширээгээ дор хаяж 48 цагийн өмнө захиалахыг зөвлөж байна.",
+      "desc2": "Хувийн зоогийн өрөөнүүдийг ашиглах бол хамгийн багадаа 72 цагийн өмнө урьдчилан мэдэгдэнэ үү",
+      "date": "DATE",
+      "time": "TIME",
+      "guests": "GUESTS",
+      "name": "FULL NAME",
+      "phone": "PHONE NUMBER",
+      "bookButton": "CONFIRM RESERVATION",
+      "note": "We will confirm your reservation within 2 hours. Cancellations accepted up to 24 hours in advance."
     }
   },
   "roomsPage": {

@@ -23,7 +23,7 @@ export default function Header({ dict, lang }: Props) {
 
   const navLinks = [
     { label: dict.rooms, href: `/${lang}/rooms` },
-    { label: dict.restaurant, href: "#restaurant" },
+    { label: dict.restaurant, href: `/${lang}/restaurant` },
     { label: dict.events, href: "#events" },
   ];
 
