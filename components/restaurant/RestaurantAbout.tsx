@@ -48,16 +48,26 @@ export default function RestaurantAbout({ dict }: Props) {
             </div>
           </div>
 
-          {/* Photo */}
           <div className="lg:col-span-1">
-            <div className="relative h-[420px] lg:h-full min-h-[320px] overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
-                alt="Embassy Restaurant interior"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 33vw"
-              />
+            <div className="relative h-[420px] lg:h-full min-h-[420px]">
+              <div className="absolute inset-0 overflow-hidden">
+                <Image
+                  src="/restaurant/image.jpg"
+                  alt="Embassy Restaurant interior"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+              </div>
+              <div className="absolute -bottom-6 left-[-24px] hidden lg:block w-[200px] h-[200px] overflow-hidden shadow-xl border-4 border-[#f0ebe0]">
+                <Image
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"
+                  alt="Signature dish"
+                  fill
+                  className="object-cover"
+                  sizes="160px"
+                />
+              </div>
             </div>
           </div>
         </div>
