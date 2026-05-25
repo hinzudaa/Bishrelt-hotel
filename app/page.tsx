@@ -5,13 +5,10 @@ import Restaurant from "@/components/sections/Restaurant";
 import EventHalls from "@/components/sections/EventHalls";
 import KaraokeLounge from "@/components/sections/KaraokeLounge";
 import Quote from "@/components/sections/Quote";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 export default function HomePage() {
   return (
     <>
-      <Header />
       <main>
         <Hero />
         <Gallery />
@@ -21,7 +18,6 @@ export default function HomePage() {
         <KaraokeLounge />
         <Quote />
       </main>
-      <Footer />
     </>
   );
 }

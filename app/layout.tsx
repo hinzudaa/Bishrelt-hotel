@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Raleway, Cormorant, Roboto_Slab } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +41,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="mn" className={`${geist.variable} ${raleway.variable} ${cormorant.variable} ${robotoSlab.variable}`}>
-      <body className="min-h-full font-raleway">{children}</body>
+      <body className="min-h-screen flex flex-col font-raleway">
+        <Header />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
