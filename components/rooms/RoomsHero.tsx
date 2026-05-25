@@ -56,9 +56,9 @@ export default function RoomsHero({
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 z-10 border-t-2 bg-[#0A0A0A] border-[#FFFFFF1A]">
-        <div className="max-w-7xl mx-auto px-6 md:px-0 flex items-center justify-between py-6 gap-6">
+        <div className="max-w-7xl mx-auto px-6 md:px-0 flex flex-col md:flex-row md:items-center md:justify-between py-4 md:py-6 gap-3 md:gap-6">
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">
               {filterType}
             </span>

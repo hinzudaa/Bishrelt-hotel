@@ -27,7 +27,7 @@ export default function RoomDetailAbout({ room, paragraphs, dict }: Props) {
               ))}
             </div>
 
-            <div className="flex items-center gap-8 mt-10 pt-8 border-t border-gray-300">
+            <div className="flex items-center md:justify-start justify-center gap-8 mt-10 pt-8 border-t border-gray-300">
               <div className="text-center">
                 <p className="font-roboto-slab text-hotel-charcoal text-[22px]">{room.area}</p>
                 <p className="text-gray-400 text-[10px] tracking-widest uppercase mt-0.5">m²</p>

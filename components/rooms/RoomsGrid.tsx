@@ -18,7 +18,7 @@ export default function RoomsGrid({ rooms, lang, gridDict, cardDict }: Props) {
     .replace("{total}", String(rooms.length));
 
   return (
-    <div className="bg-[#f0ebe0] py-25">
+    <div className="bg-[#f0ebe0] py-12 md:py-25">
       <div className="max-w-7xl mx-auto px-6 md:px-0 py-3 flex items-center justify-between">
         <p className="text-gray-500 text-[10px] font-normal tracking-wide uppercase">
           {showingText}
