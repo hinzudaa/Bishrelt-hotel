@@ -33,13 +33,13 @@ export default function RestaurantHero({ dict, lang }: Props) {
             {dict.tagline}
           </p>
           <h1 className="font-cormorant font-semibold leading-none mb-5">
-            <span className="text-gold italic text-[64px] md:text-[90px] block">{dict.titleGold}</span>
-            <span className="text-white text-[64px] md:text-[90px] block">{dict.titleNormal}</span>
+            <span className="text-gold italic text-[44px] md:text-[90px] block">{dict.titleGold}</span>
+            <span className="text-white text-[44px] md:text-[90px] block">{dict.titleNormal}</span>
           </h1>
-          <p className="text-white/70 text-[16px] max-w-md leading-relaxed mb-10">
+          <p className="text-white/70 text-[15px] max-w-md leading-relaxed">
             {dict.subtitle}
           </p>
-          <div className="flex flex-row gap-4">
+          <div className="hidden sm:flex flex-row gap-3 mt-8">
             <Link
               href="#reservation"
               className="inline-flex items-center gap-3 bg-gold text-black text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors"
@@ -49,7 +49,6 @@ export default function RestaurantHero({ dict, lang }: Props) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-
             <Link
               href="#menu"
               className="inline-flex items-center gap-3 bg-transparent text-[#FFFFFFD9] text-[11px] tracking-[0.2em] uppercase px-8 py-4 border border-[#FFFFFF33] transition-colors"
@@ -58,6 +57,24 @@ export default function RestaurantHero({ dict, lang }: Props) {
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="relative z-10 sm:hidden px-6 pb-10 flex flex-col gap-3">
+        <Link
+          href="#reservation"
+          className="flex items-center justify-center gap-3 bg-gold text-black text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors"
+        >
+          {dict.bookButton}
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Link>
+        <Link
+          href="#menu"
+          className="flex items-center justify-center gap-3 bg-transparent text-[#FFFFFFD9] text-[11px] tracking-[0.2em] uppercase px-8 py-4 border border-[#FFFFFF33] transition-colors"
+        >
+          {dict.menu}
+        </Link>
       </div>
     </section>
   );

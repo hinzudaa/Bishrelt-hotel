@@ -7,7 +7,7 @@ type Props = {
 
 export default function RestaurantAbout({ dict }: Props) {
   return (
-    <section className="bg-[#f0ebe0] py-24">
+    <section className="bg-[#f0ebe0] py-14 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="lg:col-span-2">

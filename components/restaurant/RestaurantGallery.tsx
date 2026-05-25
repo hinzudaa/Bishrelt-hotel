@@ -16,7 +16,7 @@ const galleryImages = [
 
 export default function RestaurantGallery({ dict }: Props) {
   return (
-    <section className="py-24">
+    <section className="py-14 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
         <p className="text-[10px] tracking-[0.25em] uppercase text-gold mb-10 flex items-center gap-3">
           <span className="w-8 h-px bg-gold inline-block" />
@@ -53,10 +53,14 @@ export default function RestaurantGallery({ dict }: Props) {
             />
           </div>
 
-          {galleryImages.slice(3).map((img, i) => (
+          {galleryImages.slice(3).map((img, i, arr) => (
             <div
               key={i}
-              className="relative overflow-hidden group col-span-1 h-[150px] md:h-full"
+              className={`relative overflow-hidden group h-[150px] md:h-full ${
+                i === arr.length - 1 && arr.length % 2 !== 0
+                  ? "col-span-2 md:col-span-1"
+                  : "col-span-1"
+              }`}
             >
               <Image
                 src={img.src}

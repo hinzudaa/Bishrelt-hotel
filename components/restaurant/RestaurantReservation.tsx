@@ -11,26 +11,22 @@ export default function RestaurantReservation({ dict }: Props) {
   const [guests, setGuests] = useState(2);
 
   return (
-    <section className="bg-[#f0ebe0] py-24">
+    <section id="reservation" className="bg-[#f0ebe0] py-14 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
           <div className="lg:col-span-2">
-            <p className="text-[10px] tracking-[0.25em] uppercase text-gold flex items-center gap-3">
+            <p className="text-[10px] tracking-[0.25em] uppercase text-gold mb-6 flex items-center gap-3">
               <span className="w-8 h-px bg-gold inline-block" />
               {dict.label}
             </p>
-            <div className="flex flex-row gap-4 py-10">
-            <h2 className="font-cormorant italic font-semibold text-hotel-charcoal text-[42px] leading-tight">
+            <h2 className="font-cormorant font-semibold text-hotel-charcoal text-[36px] md:text-[42px] leading-tight mb-1">
               {dict.heading}
             </h2>
-            <p className="font-cormorant italic font-semibold text-gold text-[42px] leading-tight mb-1">
+            <p className="font-cormorant italic text-gold text-[28px] mb-6">
               {dict.headingGold}
             </p>
-            </div>
-            <div className="max-w-175">
-            <p className="text-gray-500 text-[15px] leading-relaxed">{dict.desc1}</p>
+            <p className="text-gray-500 text-[15px] leading-relaxed mb-3">{dict.desc1}</p>
             <p className="text-gray-500 text-[15px] leading-relaxed">{dict.desc2}</p>
-            </div>
           </div>
 
           <div className="lg:col-span-1 bg-white p-8">

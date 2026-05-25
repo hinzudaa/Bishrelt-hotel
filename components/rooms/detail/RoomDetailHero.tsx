@@ -45,12 +45,18 @@ export default function RoomDetailHero({ room, lang, dict }: Props) {
               </span>
             </div>
           </div>
-          <div className="pt-6">
-            <button className="flex-1 bg-gold text-gray-900 text-[10px] font-normal tracking-[0.18em] uppercase py-2.5 hover:bg-gold-dark transition-colors flex items-center justify-center gap-2 p-4">
+          <div className="hidden sm:block pt-6">
+            <button className="bg-gold text-gray-900 text-[10px] font-normal tracking-[0.18em] uppercase py-2.5 hover:bg-gold-dark transition-colors flex items-center justify-center gap-2 p-4">
               Өрөө захиалах
             </button>
           </div>
         </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 sm:hidden px-6 pb-10">
+        <button className="w-full bg-gold text-gray-900 text-[10px] font-normal tracking-[0.18em] uppercase py-4 hover:bg-gold-dark transition-colors flex items-center justify-center gap-2">
+          Өрөө захиалах
+        </button>
       </div>
     </section>
   );
