@@ -3,17 +3,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-const navLinks = [
-  { label: "Our Rooms", href: "/rooms" },
-  { label: "Restaurant", href: "#restaurant" },
-  { label: "Event Halls", href: "#events" },
-  { label: "Karaoke & Lounge", href: "#karaoke" },
-];
+type NavDict = Dictionary["nav"];
 
-export default function Header() {
+type Props = {
+  dict: NavDict;
+  lang: string;
+};
+
+export default function Header({ dict, lang }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  const otherLang = lang === "en" ? "mn" : "en";
+  const switchHref = pathname.replace(`/${lang}`, `/${otherLang}`);
+
+  const navLinks = [
+    { label: dict.rooms, href: `/${lang}/rooms` },
+    { label: dict.restaurant, href: "#restaurant" },
+    { label: dict.events, href: "#events" },
+    { label: dict.karaoke, href: "#karaoke" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -31,8 +44,14 @@ export default function Header() {
     >
       <nav>
         <div className="max-w-7xl mx-auto px-6 sm:px-0 flex items-center justify-between py-4 sm:py-5">
-          <Link href="/">
-            <Image src='/images/logo.svg' width={90} height={38} alt="Bishrelt Hotel" className="sm:w-27.5 sm:h-11.5" />
+          <Link href={`/${lang}`}>
+            <Image
+              src="/images/logo.svg"
+              width={90}
+              height={38}
+              alt="Bishrelt Hotel"
+              className="sm:w-27.5 sm:h-11.5"
+            />
           </Link>
 
           <ul className="hidden md:flex items-center gap-10">
@@ -49,14 +68,17 @@ export default function Header() {
           </ul>
 
           <div className="hidden md:flex items-center gap-6">
-            <button className="text-white/90 hover:text-white text-sm tracking-wider transition-colors">
-              EN
-            </button>
+            <Link
+              href={switchHref}
+              className="text-white/90 hover:text-white text-sm tracking-wider transition-colors"
+            >
+              {otherLang.toUpperCase()}
+            </Link>
             <Link
               href="#booking"
               className="border border-white text-white hover:bg-white hover:text-hotel-dark text-xs tracking-widest uppercase px-6 py-2.5 transition-colors"
             >
-              Захиалга өгөх
+              {dict.book}
             </Link>
           </div>
 
@@ -65,7 +87,14 @@ export default function Header() {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               {mobileOpen ? (
                 <path d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -96,15 +125,19 @@ export default function Header() {
             ))}
           </ul>
           <div className="flex items-center justify-between pt-4 border-t border-white/10">
-            <button className="text-white/70 hover:text-white text-sm tracking-wider transition-colors">
-              EN
-            </button>
+            <Link
+              href={switchHref}
+              className="text-white/70 hover:text-white text-sm tracking-wider transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              {otherLang.toUpperCase()}
+            </Link>
             <Link
               href="#booking"
               className="border border-white text-white text-xs tracking-widest uppercase px-5 py-2.5 hover:bg-white hover:text-hotel-dark transition-colors"
               onClick={() => setMobileOpen(false)}
             >
-              Захиалга өгөх
+              {dict.book}
             </Link>
           </div>
         </div>

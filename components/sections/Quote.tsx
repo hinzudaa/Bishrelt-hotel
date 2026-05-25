@@ -1,43 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
 
-const quotes = [
-  {
-    text: "Орчин нь цэвэрхэн, ор нь тухтай, үйлчилгээ нь найрсаг байсан. Өглөөний цай дажгүй, ер нь тав тухтай, дахин ирэхэд асуудалгүй газар байна.",
-    author: "Б.Бат-Ерөөлт",
-    source: "Restaurant",
-  },
-  {
-    text: "Bishrelt Hotel-ийн үйлчилгээ үнэхээр гайхалтай байсан. Өрөөний тохилог байдал, тогооч нарын гайхалтай хоол, ажилчдын халуун дотно хандлага бүгд төгс байлаа.",
-    author: "Д.Оюунбаатар",
-    source: "Rooms & Suits",
-  },
-  {
-    text: "Хурлын танхим маш сайхан тоноглогдсон байсан. Техник тоноглол бүрэн, ажилтнууд мэргэжлийн түвшинд туслаж байлаа. Дараагийн удаа ч энд ирнэ.",
-    author: "Г.Болд-Эрдэнэ",
-    source: "Event Halls",
-  },
-  {
-    text: "Karaoke & Lounge нь миний хамгийн дуртай зугаалах газар болсон. Дуунд сан асар том, VIP өрөөнүүд маш тухтай, үйлчилгээ шуурхай.",
-    author: "Н.Сарантуяа",
-    source: "Karaoke & Lounge",
-  },
-  {
-    text: "Embassy Restaurant-д идсэн хоол амттай, танилцуулга сайхан байсан. Орчны зохицол, гэрэлтүүлэг бүгд нийлж тансаг орчин бүтээжээ.",
-    author: "Э.Мөнхбат",
-    source: "Restaurant",
-  },
-];
+type QuotesDict = Dictionary["quotes"];
 
-export default function Quote() {
+export default function Quote({ dict }: { dict: QuotesDict }) {
   const [current, setCurrent] = useState(0);
-  const q = quotes[current];
+  const q = dict[current];
 
   return (
     <section className="bg-[#F0EBE0] py-24">
       <div className="max-w-[754px] mx-auto text-center px-8">
-        <p className="text-[#C9A961] text-[16px] tracking-[0.35em] uppercase mb-10 flex items-center justify-center gap-3 font-normal font-roboto-slab ">
+        <p className="text-[#C9A961] text-[16px] tracking-[0.35em] uppercase mb-10 flex items-center justify-center gap-3 font-normal font-roboto-slab">
           <span className="w-6 h-px bg-[#C9A961] inline-block" />
           {q.source}
           <span className="w-6 h-px bg-gold inline-block" />
@@ -52,7 +27,7 @@ export default function Quote() {
         </cite>
 
         <div className="flex items-center justify-center gap-2 mt-8">
-          {quotes.map((_, i) => (
+          {dict.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}

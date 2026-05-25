@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "title": "Bishrelt Hotel — A New Standard of Luxury",
+    "description": "Genuine Ulaanbaatar luxury since 1994. Bishrelt Hotel — Ulaanbaatar's premier luxury hotel."
+  },
+  "nav": {
+    "rooms": "Our Rooms",
+    "restaurant": "Restaurant",
+    "events": "Event Halls",
+    "karaoke": "Karaoke & Lounge",
+    "book": "Book Now"
+  },
+  "hero": {
+    "line1Gold": "Luxury",
+    "line1Normal": " Refined to",
+    "line2Normal": "A New ",
+    "line2Gold": "Standard",
+    "description": "Luxurious surroundings, world-class service, and an unforgettable escape — Bishrelt Hotel awaits you in a serene and perfect sanctuary.",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "room": "Room",
+    "guests": "Guests",
+    "bookRoom": "Book Room"
+  },
+  "gallery": {
+    "tagline": "Genuine Ulaanbaatar elegance since 1994",
+    "description": "From the moment you arrive, you will be captivated by the harmony of surroundings, the luxury of materials, and the extraordinary quality of craftsmanship in every detail."
+  },
+  "homeRooms": {
+    "sectionLabel": "Rooms & Suites",
+    "learnMore": "Learn More",
+    "prev": "Previous",
+    "next": "Next",
+    "items": [
+      {
+        "name": "Deluxe King Room",
+        "description": "The Deluxe King Room perfectly blends comfort and modern design — the ideal choice for travelers and business guests. Soft lighting, a minimalist luxurious interior, and a king-size bed with premium bedding ensure deep rest.",
+        "features": ["King-Size Bed", "City View", "Private Jacuzzi", "Flat-Screen TV", "Mini Bar", "Free High-Speed WiFi"],
+        "price": "₮250,000",
+        "image": "/room/image.png"
+      },
+      {
+        "name": "Junior Suite",
+        "description": "The Junior Suite features a separate living room and bedroom in a lavish setting. Enjoy sweeping panoramic city views. The generous space offers complete peace and tranquil rest.",
+        "features": ["King-Size Bed", "City View", "Luxury Bathroom", "Flat-Screen TV", "Mini Bar", "Free High-Speed WiFi"],
+        "price": "₮380,000",
+        "image": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80"
+      },
+      {
+        "name": "Executive Suite",
+        "description": "The Executive Suite is a luxury suite designed for business guests, featuring a private meeting room and personal chef service. Floor-to-ceiling panoramic windows and state-of-the-art equipment throughout.",
+        "features": ["King-Size Bed", "Panorama View", "Private Jacuzzi", "Home Cinema", "Full Kitchen", "Free High-Speed WiFi"],
+        "price": "₮550,000",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=1200&q=80"
+      },
+      {
+        "name": "Presidential Suite",
+        "description": "Our most prestigious Presidential Suite is designed for chief executives. Featuring a private meeting room, personal chef service, and the pinnacle of luxury on the city's highest floor.",
+        "features": ["King-Size Bed", "Panorama View", "Private Jacuzzi", "Home Cinema", "Private Kitchen", "Butler Service"],
+        "price": "₮850,000",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80"
+      }
+    ]
+  },
+  "restaurant": {
+    "sectionLabel": "Restaurant",
+    "heading": "Embassy Restaurant",
+    "description": "Experience extraordinary flavors at our exclusive luxury restaurant. Award-winning chefs use only the finest seasonal ingredients, blending Mongolian heritage with modern cuisine for an exquisite dining experience.",
+    "features": [
+      {
+        "title": "Michelin-Inspired Cuisine",
+        "desc": "Innovative dishes crafted with modern culinary techniques"
+      },
+      {
+        "title": "Wine Cellar",
+        "desc": "A curated collection of 300+ wines from the world's finest regions"
+      },
+      {
+        "title": "Private Dining Rooms",
+        "desc": "Exclusive rooms for business meetings and private events"
+      }
+    ],
+    "learnMore": "Learn More"
+  },
+  "events": {
+    "sectionLabel": "Event Halls",
+    "heading": "Grand Event Halls",
+    "description": "A perfect setting for weddings, conferences, and every special occasion. Modern equipment, spacious interiors, and professional service — making every moment unforgettable.",
+    "halls": [
+      { "type": "Meeting Room", "name": "Crystal Room", "capacity": "10–25 guests" },
+      { "type": "Conference Hall", "name": "Royal Hall", "capacity": "Up to 50 guests" },
+      { "type": "Event Hall", "name": "Diamond Hall", "capacity": "Up to 50 guests" }
+    ],
+    "learnMore": "Learn More"
+  },
+  "karaoke": {
+    "sectionLabel": "Karaoke & Lounge",
+    "heading": "Karaoke & Lounge",
+    "description1": "Karaoke & Lounge combines music, relaxation, and entertainment all in one modern, comfortable space. Perfect for friends, colleagues, or simply unwinding in style.",
+    "description2": "Private karaoke rooms with quality sound systems and a comfortable lounge area give you different vibes all in one place. Create an unforgettable evening with drinks and light bites.",
+    "features": [
+      "10 private VIP rooms",
+      "Full bar & food service",
+      "Available 24/7 with reservation",
+      "Groups of 4–30 guests",
+      "Premium Bose sound system",
+      "100,000+ song library"
+    ],
+    "learnMore": "Learn More"
+  },
+  "quotes": [
+    {
+      "text": "The room was spotless, the bed incredibly comfortable, and the staff were so friendly. Breakfast was delightful — a truly relaxing place I'd happily return to.",
+      "author": "B. Bat-Yeröölt",
+      "source": "Restaurant"
+    },
+    {
+      "text": "The service at Bishrelt Hotel was truly outstanding. The room's elegance, the chefs' extraordinary cuisine, and the warm hospitality of the staff were all simply perfect.",
+      "author": "D. Oyuunbaatar",
+      "source": "Rooms & Suites"
+    },
+    {
+      "text": "The conference hall was beautifully equipped — full technical setup and staff who assisted with true professional expertise. We will definitely return.",
+      "author": "G. Bold-Erdene",
+      "source": "Event Halls"
+    },
+    {
+      "text": "Karaoke & Lounge has become my favorite place to unwind. An enormous song library, incredibly comfortable VIP rooms, and prompt, attentive service.",
+      "author": "N. Sarantuya",
+      "source": "Karaoke & Lounge"
+    },
+    {
+      "text": "The food at Embassy Restaurant was delicious with a beautiful presentation. The ambiance, lighting, and overall setting all came together to create a truly luxurious atmosphere.",
+      "author": "E. Munkhbat",
+      "source": "Restaurant"
+    }
+  ],
+  "footer": {
+    "description": "Where Mongolian heritage meets world-class luxury. An unforgettable experience awaits at every visit.",
+    "navLabel": "Navigation",
+    "contactLabel": "Contact",
+    "copyright": "© 2026 Bishrelt Hotel. All rights reserved.",
+    "links": [
+      { "label": "Rooms & Suites", "href": "#rooms" },
+      { "label": "Embassy Restaurant", "href": "#restaurant" },
+      { "label": "Grand Event Halls", "href": "#events" },
+      { "label": "Karaoke & Lounge", "href": "#karaoke" },
+      { "label": "Book a Stay", "href": "#booking" }
+    ]
+  },
+  "roomsPage": {
+    "hero": {
+      "tagline": "Our Rooms · Accommodation",
+      "titleGold": "Our",
+      "titleNormal": " Rooms",
+      "description": "Choose from four categories of accommodation. From the warm intimacy of a Deluxe King to the panoramic terrace of the Bishrelt Suite."
+    },
+    "filterType": "TYPE",
+    "filterPrice": "PRICE",
+    "filterGuests": "GUESTS",
+    "categories": {
+      "ALL": "ALL",
+      "DELUXE": "DELUXE",
+      "SUITE": "SUITE",
+      "SIGNATURE": "SIGNATURE"
+    },
+    "grid": {
+      "showing": "Showing {count} of {total} rooms",
+      "allRooms": "ALL ROOMS",
+      "perNight": "PER NIGHT RATE",
+      "breakfast": "BREAKFAST INCLUDED",
+      "noRooms": "No rooms available in this category.",
+      "areaUnit": "m²",
+      "guestsLabel": "Guests"
+    },
+    "card": {
+      "book": "BOOK",
+      "details": "DETAILS"
+    },
+    "cta": {
+      "label": "RESERVATIONS",
+      "heading1": "Your perfect stay",
+      "heading2": "begins here.",
+      "description": "Luxury surroundings, refined service, and an unforgettable experience — Bishrelt Hotel is waiting for you.",
+      "bookButton": "BOOK A ROOM",
+      "contactButton": "CONTACT US"
+    }
+  }
+}

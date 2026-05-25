@@ -1,19 +1,40 @@
 import Image from "next/image";
 import { CATEGORIES, type Category } from "../../types/data";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+
+type RoomsHeroDict = Dictionary["roomsPage"]["hero"];
+type CategoryLabels = Dictionary["roomsPage"]["categories"];
 
 type Props = {
   activeTab: Category;
   onTabChange: (tab: Category) => void;
   activePage: number;
   onPageChange: (page: number) => void;
+  dict: RoomsHeroDict;
+  categories: typeof CATEGORIES;
+  categoryLabels: CategoryLabels;
+  filterType: string;
+  filterPrice: string;
+  filterGuests: string;
 };
 
-export default function RoomsHero({ activeTab, onTabChange, activePage, onPageChange }: Props) {
+export default function RoomsHero({
+  activeTab,
+  onTabChange,
+  activePage,
+  onPageChange,
+  dict,
+  categories,
+  categoryLabels,
+  filterType,
+  filterPrice,
+  filterGuests,
+}: Props) {
   return (
     <section className="relative min-h-screen flex flex-col">
       <Image
         src="/rooms/image.jpg"
-        alt="Манай Өрөөнүүд"
+        alt={dict.titleNormal}
         fill
         className="object-cover"
         priority
@@ -21,16 +42,16 @@ export default function RoomsHero({ activeTab, onTabChange, activePage, onPageCh
       <div className="absolute inset-0 bg-linear-to-b from-[#0A0A0A]/75 via-[#0A0A0A]/30 to-[#0A0A0A]" />
 
       <div className="relative z-10 flex-1 w-full max-w-7xl mx-auto px-6 md:px-0 flex flex-col justify-center pt-20">
-        <p className="text-gold text-[16px] tracking-[0.35em] uppercase flex items-center justify-start gap-3 font-normal font-roboto-slab ">
+        <p className="text-gold text-[16px] tracking-[0.35em] uppercase flex items-center justify-start gap-3 font-normal font-roboto-slab">
           <span className="w-8 h-px bg-gold inline-block" />
-          Манай өрөөнүүд · Accommodation
+          {dict.tagline}
         </p>
         <h1 className="font-cormorant italic text-5xl md:text-[72px] leading-tight mb-5 font-bold">
-          <span className="text-gold"> Манай</span>
-          <span className="text-white"> Өрөөнүүд</span>
+          <span className="text-gold">{dict.titleGold}</span>
+          <span className="text-white">{dict.titleNormal}</span>
         </h1>
         <p className="text-white text-[16px] font-normal max-w-lg leading-relaxed">
-          Байрлахад тохиромжтой дөрвөн төрлийн өрөөний сонголттойг сонгоорой. Үүнд Deluxe King-ийн дулаан дотно өрөөнөөс эхлээд Bishrelt Suite-ийн эргэн тойрон дахь тагт хүртэл багтана.
+          {dict.description}
         </p>
       </div>
 
@@ -38,9 +59,11 @@ export default function RoomsHero({ activeTab, onTabChange, activePage, onPageCh
         <div className="max-w-7xl mx-auto px-6 md:px-0 flex items-center justify-between py-6 gap-6">
 
           <div className="flex items-center gap-3">
-            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">ТӨРӨЛ</span>
+            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">
+              {filterType}
+            </span>
             <div className="flex items-center gap-2">
-              {CATEGORIES.map((cat) => (
+              {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => onTabChange(cat)}
@@ -50,14 +73,16 @@ export default function RoomsHero({ activeTab, onTabChange, activePage, onPageCh
                       : "border-white/20 text-white/40 hover:border-white/40 hover:text-white/70"
                   }`}
                 >
-                  {cat}
+                  {categoryLabels[cat]}
                 </button>
               ))}
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">ҮНЭ</span>
+            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">
+              {filterPrice}
+            </span>
             <button className="flex items-center gap-2 border border-white/20 text-white/40 text-[10px] tracking-[0.2em] uppercase px-4 py-1.5 hover:border-white/40 hover:text-white/70 transition-all">
               DELUXE
               <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,7 +92,9 @@ export default function RoomsHero({ activeTab, onTabChange, activePage, onPageCh
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">ЗОЧНЫ ТОО</span>
+            <span className="text-white/30 text-[10px] tracking-[0.25em] uppercase shrink-0">
+              {filterGuests}
+            </span>
             <div className="flex items-center gap-2">
               {[1, 2, 3, 4].map((n) => (
                 <button

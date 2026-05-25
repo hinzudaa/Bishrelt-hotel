@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+
+type HeroDict = Dictionary["hero"];
 
 const roomTypes = [
   "Deluxe Suite",
@@ -11,7 +14,7 @@ const roomTypes = [
   "Presidential Suite",
 ];
 
-export default function Hero() {
+export default function Hero({ dict }: { dict: HeroDict }) {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [room, setRoom] = useState(roomTypes[0]);
@@ -33,12 +36,14 @@ export default function Hero() {
       <div className="relative z-10 h-full max-w-7xl mx-auto flex flex-col px-6 md:px-0">
         <div className="flex-1 flex flex-col justify-center pt-20">
           <h1 className="text-white font-cormorant italic text-[42px] md:text-[72px] font-bold leading-tight md:leading-20 tracking-tight md:tracking-[-1.8px]">
-            <span className="text-gold">Тансаг</span> Байдлын
+            <span className="text-gold">{dict.line1Gold}</span>
+            {dict.line1Normal}
             <br />
-            Шинэ <span className="text-gold">Түвшин</span>
+            {dict.line2Normal}
+            <span className="text-gold">{dict.line2Gold}</span>
           </h1>
           <p className="text-white/70 text-sm md:text-base max-w-md leading-relaxed mt-6">
-            Тансаг орчин, дээд зэрэглэлийн үйлчилгээ, мартагдашгүй амралтын мэдрэмж — Bishrelt Hotel-д таныг тайван бөгөөд төгс орон зай хүлээж байна.
+            {dict.description}
           </p>
         </div>
 
@@ -47,7 +52,7 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row w-full">
               <div className="flex flex-col gap-1.5 flex-1 px-4 py-2 border-b md:border-b-0 md:border-r border-white/15">
                 <label className="text-gold text-[9px] tracking-[0.35em] uppercase">
-                  Check In
+                  {dict.checkIn}
                 </label>
                 <input
                   type="date"
@@ -59,7 +64,7 @@ export default function Hero() {
 
               <div className="flex flex-col gap-1.5 flex-1 px-4 py-2 border-b md:border-b-0 md:border-r border-white/15">
                 <label className="text-gold text-[9px] tracking-[0.35em] uppercase">
-                  Check Out
+                  {dict.checkOut}
                 </label>
                 <input
                   type="date"
@@ -71,7 +76,7 @@ export default function Hero() {
 
               <div className="flex flex-col gap-1.5 flex-1 px-4 py-2 border-b md:border-b-0 md:border-r border-white/15">
                 <label className="text-gold text-[9px] tracking-[0.35em] uppercase">
-                  Өрөө
+                  {dict.room}
                 </label>
                 <select
                   value={room}
@@ -88,7 +93,7 @@ export default function Hero() {
 
               <div className="flex flex-col gap-1.5 flex-1 px-4 py-2 border-b md:border-b-0 md:border-r border-white/15">
                 <label className="text-gold text-[9px] tracking-[0.35em] uppercase">
-                  Зочны тоо
+                  {dict.guests}
                 </label>
                 <select
                   value={guests}
@@ -104,9 +109,19 @@ export default function Hero() {
               </div>
 
               <button className="bg-[#C9A961] cursor-pointer hover:bg-[#d0ab54] text-white text-xs tracking-[0.25em] uppercase px-10 py-5 transition-colors shrink-0 flex items-center gap-3">
-                Өрөө захиалах
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                {dict.bookRoom}
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </button>
             </div>
