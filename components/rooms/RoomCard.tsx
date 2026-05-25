@@ -17,7 +17,7 @@ export default function RoomCard({ room, lang, gridDict, cardDict }: Props) {
   const description = lang === "en" ? room.descriptionEn : room.description;
 
   return (
-    <div className="bg-white group cursor-pointer">
+    <div className="bg-white group cursor-pointer flex flex-col">
       <div className="relative h-[330px] overflow-hidden">
         <Image
           src={room.image}
@@ -38,7 +38,7 @@ export default function RoomCard({ room, lang, gridDict, cardDict }: Props) {
         </div>
       </div>
 
-      <div className="p-8">
+      <div className="p-8 flex flex-col flex-1">
         <h3 className="text-black font-cormorant font-semibold text-[28px]">
           {room.name}
         </h3>
@@ -64,7 +64,7 @@ export default function RoomCard({ room, lang, gridDict, cardDict }: Props) {
           </span>
         </div>
 
-        <div className="flex gap-2 pt-[56px]">
+        <div className="flex gap-2 mt-auto pt-6">
           <button className="flex-1 bg-gold text-gray-900 text-[10px] font-normal tracking-[0.18em] uppercase py-2.5 hover:bg-gold-dark transition-colors flex items-center justify-center gap-2">
             {cardDict.book}
           </button>
