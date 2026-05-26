@@ -18,60 +18,87 @@ export default function RestaurantGallery({ dict }: Props) {
   return (
     <section className="py-14 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
-        <p className="text-[10px] tracking-[0.25em] uppercase text-gold mb-10 flex items-center gap-3">
-          <span className="w-8 h-px bg-gold inline-block" />
-          {dict.label}
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:auto-rows-[200px]">
-          <div className="relative overflow-hidden group col-span-2 h-[550px] md:col-span-1 md:row-span-2 md:h-full">
+
+        <div className="md:hidden">
+          <div className="relative w-full h-[260px] overflow-hidden mb-3">
             <Image
               src={galleryImages[0].src}
               alt={galleryImages[0].alt}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+              sizes="100vw"
             />
           </div>
-
-          <div className="relative overflow-hidden group col-span-1 h-[150px] md:col-span-2 md:h-full">
-            <Image
-              src={galleryImages[1].src}
-              alt={galleryImages[1].alt}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 50vw, 67vw"
-            />
+          <p className="text-[10px] tracking-[0.25em] uppercase text-gold mt-6 mb-6 flex items-center gap-3">
+            <span className="w-8 h-px bg-gold inline-block" />
+            {dict.label}
+          </p>
+          <div className="grid grid-cols-2 gap-3">
+            {galleryImages.slice(1).map((img, i) => (
+              <div key={i} className="relative h-[140px] overflow-hidden group">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="50vw"
+                />
+              </div>
+            ))}
           </div>
+        </div>
 
-          <div className="relative overflow-hidden group col-span-1 h-[150px] md:col-span-2 md:h-full">
-            <Image
-              src={galleryImages[2].src}
-              alt={galleryImages[2].alt}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 50vw, 67vw"
-            />
-          </div>
+        <div className="hidden md:block">
+          <p className="text-[10px] tracking-[0.25em] uppercase text-gold mb-10 flex items-center gap-3">
+            <span className="w-8 h-px bg-gold inline-block" />
+            {dict.label}
+          </p>
 
-          {galleryImages.slice(3).map((img, i, arr) => (
-            <div
-              key={i}
-              className={`relative overflow-hidden group h-[150px] md:h-full ${
-                i === arr.length - 1 && arr.length % 2 !== 0
-                  ? "col-span-2 md:col-span-1"
-                  : "col-span-1"
-              }`}
-            >
+          <div className="grid grid-cols-2 gap-3 auto-rows-[280px] mb-3">
+            <div className="relative overflow-hidden group row-span-2">
               <Image
-                src={img.src}
-                alt={img.alt}
+                src={galleryImages[0].src}
+                alt={galleryImages[0].alt}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 33vw"
+                sizes="50vw"
               />
             </div>
-          ))}
+            <div className="relative overflow-hidden group">
+              <Image
+                src={galleryImages[1].src}
+                alt={galleryImages[1].alt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="50vw"
+              />
+            </div>
+            <div className="relative overflow-hidden group">
+              <Image
+                src={galleryImages[2].src}
+                alt={galleryImages[2].alt}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="50vw"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-3 h-[220px]">
+            {galleryImages.slice(3).map((img, i) => (
+              <div key={i} className="relative overflow-hidden group">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="33vw"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
