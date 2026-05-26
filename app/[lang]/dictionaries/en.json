@@ -424,10 +424,22 @@
       "learnMore": "EXPLORE HALLS"
     },
     "stats": [
-      { "value": "3", "label": "Event Halls" },
-      { "value": "500+", "label": "Seating Capacity" },
-      { "value": "1,500 m²", "label": "Total Area" },
-      { "value": "15+", "label": "Years of Experience" }
+      {
+        "value": "3",
+        "label": "Event Halls"
+      },
+      {
+        "value": "500+",
+        "label": "Seating Capacity"
+      },
+      {
+        "value": "1,500 m²",
+        "label": "Total Area"
+      },
+      {
+        "value": "15+",
+        "label": "Years of Experience"
+      }
     ],
     "halls": {
       "label": "OUR VENUES",
@@ -438,7 +450,12 @@
           "description": "The Crystal Ballroom is our most prestigious venue — a luminous, airy space with soaring ceilings, crystal chandeliers, and natural light flooding through floor-to-ceiling windows. Ideal for weddings, galas, and large corporate events.",
           "area": "800 m²",
           "capacity": "Up to 350 guests",
-          "features": ["Natural daylight & crystal chandeliers", "Professional stage & full AV system", "Dedicated bridal suite", "Custom lighting & drapery"],
+          "features": [
+            "Natural daylight & crystal chandeliers",
+            "Professional stage & full AV system",
+            "Dedicated bridal suite",
+            "Custom lighting & drapery"
+          ],
           "button": "EXPLORE VENUE",
           "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=80"
         },
@@ -448,7 +465,12 @@
           "description": "Royal Hall blends warmth and sophistication — a refined space perfect for wedding banquets, anniversary dinners, and corporate gatherings. Its intimate scale ensures every guest feels personally attended to.",
           "area": "450 m²",
           "capacity": "Up to 180 guests",
-          "features": ["Private entrance & foyer", "Cocktail terrace access", "Full audio-visual setup", "Dedicated catering kitchen"],
+          "features": [
+            "Private entrance & foyer",
+            "Cocktail terrace access",
+            "Full audio-visual setup",
+            "Dedicated catering kitchen"
+          ],
           "button": "EXPLORE VENUE",
           "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80"
         },
@@ -458,7 +480,12 @@
           "description": "Diamond Hall is a contemporary, flexible space designed for conferences, product launches, and intimate social events. Its modular layout adapts to any configuration, from theatre-style to classroom or banquet rounds.",
           "area": "250 m²",
           "capacity": "Up to 100 guests",
-          "features": ["Modular layout configurations", "Built-in projector & screen", "High-speed fibre internet", "Breakout lounge area"],
+          "features": [
+            "Modular layout configurations",
+            "Built-in projector & screen",
+            "High-speed fibre internet",
+            "Breakout lounge area"
+          ],
           "button": "EXPLORE VENUE",
           "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
         }
@@ -484,6 +511,102 @@
       "message": "ADDITIONAL NOTES",
       "submitButton": "SEND ENQUIRY",
       "note": "Our events team will contact you within 24 hours to discuss your requirements."
+    }
+  },
+  "karaokePage": {
+    "hero": {
+      "tagline": "BISHRELT HOTEL · KARAOKE & LOUNGE",
+      "titleGold": "VIP",
+      "titleNormal": "Karaoke Lounge",
+      "subtitle": "Where music, luxury, and unforgettable nights come together in the heart of Ulaanbaatar.",
+      "bookButton": "BOOK A ROOM"
+    },
+    "features": {
+      "label": "FACILITIES",
+      "items": [
+        {
+          "icon": "speaker",
+          "title": "Studio-Grade Audio System",
+          "desc": "Meyer Sound, JBL, Bose & QSC arrays delivering cinema-quality sound across all 10 private VIP rooms."
+        },
+        {
+          "icon": "mic",
+          "title": "Professional Microphone System",
+          "desc": "Sennheiser wireless microphones with crystal-clear clarity and zero feedback for every performance."
+        },
+        {
+          "icon": "screen",
+          "title": "Cinematic 4K Display",
+          "desc": "98\" 4K ultra-HD screens with zero-lag lyric sync and full HDR picture quality in every room."
+        },
+        {
+          "icon": "music",
+          "title": "100,000+ Song Library",
+          "desc": "Mongolian, Korean, English, Chinese and more — updated weekly with the latest releases."
+        },
+        {
+          "icon": "glass",
+          "title": "Full Bar & Dining Service",
+          "desc": "In-room menu service with cocktails, mocktails, light bites and full dining — delivered to your door."
+        },
+        {
+          "icon": "star",
+          "title": "Personal Room Host",
+          "desc": "A dedicated host for your room ensures flawless service from arrival to your final encore."
+        }
+      ]
+    },
+    "gallery": {
+      "label": "GALLERY",
+      "viewAll": "VIEW GALLERY"
+    },
+    "rooms": {
+      "label": "PRIVATE ROOMS",
+      "heading": "Choose Your",
+      "headingGold": "Stage",
+      "perHour": "PER HOUR",
+      "bookButton": "BOOK NOW",
+      "items": [
+        {
+          "name": "Studio Room",
+          "capacity": "4–10 guests",
+          "desc": "Манай тэргүүлэх өрөө — LED шал, мэргэжлийн микрофон, болон орчныг бүхэлд нь мэдрүүлэх дууны шийдэлтэй, жинхэнэ тайзны туршлагыг бүрэн мэдрүүлнэ",
+          "features": [
+            "JBL Pro sound system",
+            "LED ambient lighting",
+            "Stage equipment set",
+            "Dual 65\" screens",
+            "Mini bar included"
+          ],
+          "price": "₮350,000"
+        },
+        {
+          "desc": "Манай тэргүүлэх өрөө — LED шал, мэргэжлийн микрофон, болон орчныг бүхэлд нь мэдрүүлэх дууны шийдэлтэй, жинхэнэ тайзны туршлагыг бүрэн мэдрүүлнэ.",
+          "name": "VIP Suite",
+          "capacity": "10–22 guests",
+          "features": [
+            "JBL Pro sound system",
+            "LED dance floor",
+            "Stage equipment set",
+            "Dual 98\" screens",
+            "Cocktail bar included"
+          ],
+          "price": "₮550,000"
+        },
+        {
+          "desc": "Манай тэргүүлэх өрөө — LED шал, мэргэжлийн микрофон, болон орчныг бүхэлд нь мэдрүүлэх дууны шийдэлтэй, жинхэнэ тайзны туршлагыг бүрэн мэдрүүлнэ.",
+          "name": "Grand Ballroom",
+          "capacity": "22–30 guests",
+          "features": [
+            "JBL Pro sound system",
+            "LED dance floor",
+            "Stage equipment set",
+            "Dual 98\" screens",
+            "Full bar & dining"
+          ],
+          "price": "₮850,000"
+        }
+      ]
     }
   },
   "roomsPage": {

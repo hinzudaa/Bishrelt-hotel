@@ -1,0 +1,66 @@
+import Image from "next/image";
+import Link from "next/link";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+
+type Props = {
+  dict: Dictionary["karaokePage"]["hero"];
+  lang: string;
+};
+
+export default function KaraokeHero({ dict, lang }: Props) {
+  return (
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      <Image
+        src="/karaoke/hero.jpg"
+        alt="Karaoke Lounge"
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(10,10,10,0.80) 0%, rgba(10,10,10,0.45) 50%, rgba(10,10,10,0.90) 100%)",
+        }}
+      />
+
+      <div className="relative z-10 flex-1 flex items-center">
+        <div className="max-w-7xl mx-auto px-6 md:px-0 w-full">
+          <p className="text-gold text-[11px] tracking-[0.4em] uppercase flex items-center gap-3 font-roboto-slab mb-6">
+            <span className="w-8 h-px bg-gold inline-block" />
+            {dict.tagline}
+          </p>
+          <h1 className="font-cormorant font-semibold leading-none gap-4 flex">
+            <span className="text-gold italic text-[44px] md:text-[72px]">{dict.titleGold}</span>
+            <span className="text-white italic text-[44px] md:text-[72px]">{dict.titleNormal}</span>
+          </h1>
+          <p className="text-white/60 text-[15px] max-w-sm leading-relaxed py-4">
+            {dict.subtitle}
+          </p>
+          <div className="hidden sm:block">
+            <Link
+              href="#rooms"
+              className="inline-flex items-center gap-3 bg-transparent border-[#FFFFFF33] border-2 text-white text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors"
+            >
+              {dict.bookButton}
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative z-10 sm:hidden px-6 pb-10">
+        <Link
+          href="#rooms"
+          className="flex items-center justify-center gap-3 bg-gold text-black text-[11px] tracking-[0.2em] uppercase px-8 py-4 hover:bg-gold-dark transition-colors"
+        >
+          {dict.bookButton}
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </Link>
+      </div>
+    </section>
+  );
+}
