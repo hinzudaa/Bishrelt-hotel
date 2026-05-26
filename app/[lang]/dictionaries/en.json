@@ -414,6 +414,78 @@
       "note": "We will confirm your reservation within 2 hours. Cancellations accepted up to 24 hours in advance."
     }
   },
+  "eventsPage": {
+    "hero": {
+      "tagline": "Bishrelt Hotel · Хүлээн Авалт & Ёслолын Танхим",
+      "titleGold": "Celebrate",
+      "titleNormal": "in Style",
+      "subtitle": "From intimate gatherings to grand receptions, Bishrelt Hotel offers exceptional venues crafted for every occasion.",
+      "bookButton": "BOOK AN EVENT",
+      "learnMore": "EXPLORE HALLS"
+    },
+    "stats": [
+      { "value": "3", "label": "Event Halls" },
+      { "value": "500+", "label": "Seating Capacity" },
+      { "value": "1,500 m²", "label": "Total Area" },
+      { "value": "15+", "label": "Years of Experience" }
+    ],
+    "halls": {
+      "label": "OUR VENUES",
+      "items": [
+        {
+          "name": "Crystal Ballroom",
+          "tagline": "The Grand Stage for Your Celebration",
+          "description": "The Crystal Ballroom is our most prestigious venue — a luminous, airy space with soaring ceilings, crystal chandeliers, and natural light flooding through floor-to-ceiling windows. Ideal for weddings, galas, and large corporate events.",
+          "area": "800 m²",
+          "capacity": "Up to 350 guests",
+          "features": ["Natural daylight & crystal chandeliers", "Professional stage & full AV system", "Dedicated bridal suite", "Custom lighting & drapery"],
+          "button": "EXPLORE VENUE",
+          "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=80"
+        },
+        {
+          "name": "Royal Hall",
+          "tagline": "Intimate Elegance for Exclusive Events",
+          "description": "Royal Hall blends warmth and sophistication — a refined space perfect for wedding banquets, anniversary dinners, and corporate gatherings. Its intimate scale ensures every guest feels personally attended to.",
+          "area": "450 m²",
+          "capacity": "Up to 180 guests",
+          "features": ["Private entrance & foyer", "Cocktail terrace access", "Full audio-visual setup", "Dedicated catering kitchen"],
+          "button": "EXPLORE VENUE",
+          "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80"
+        },
+        {
+          "name": "Diamond Hall",
+          "tagline": "Modern Versatility for Business & Social",
+          "description": "Diamond Hall is a contemporary, flexible space designed for conferences, product launches, and intimate social events. Its modular layout adapts to any configuration, from theatre-style to classroom or banquet rounds.",
+          "area": "250 m²",
+          "capacity": "Up to 100 guests",
+          "features": ["Modular layout configurations", "Built-in projector & screen", "High-speed fibre internet", "Breakout lounge area"],
+          "button": "EXPLORE VENUE",
+          "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+        }
+      ]
+    },
+    "gallery": {
+      "label": "EVENT GALLERY"
+    },
+    "contact": {
+      "label": "ENQUIRIES",
+      "heading": "Plan Your",
+      "headingGold": "Perfect Event",
+      "desc1": "Our dedicated events team will work closely with you to bring your vision to life. Whether it is an intimate dinner for 20 or a grand gala for 350, no detail is too small.",
+      "desc2": "Submit your enquiry and a member of our team will respond within 24 hours with a tailored proposal.",
+      "desc2_1": "Submit your enquiry and a member of our team will respond within 24 hours with a tailored proposal.",
+      "desc3": "Submit your enquiry and a member of our team will respond within 24 hours with a tailored proposal.",
+      "desc4": "Submit your enquiry and a member of our team will respond within 24 hours with a tailored proposal.",
+      "eventType": "EVENT TYPE",
+      "date": "PREFERRED DATE",
+      "guests": "EXPECTED GUESTS",
+      "name": "FULL NAME",
+      "phone": "PHONE NUMBER",
+      "message": "ADDITIONAL NOTES",
+      "submitButton": "SEND ENQUIRY",
+      "note": "Our events team will contact you within 24 hours to discuss your requirements."
+    }
+  },
   "roomsPage": {
     "hero": {
       "tagline": "Our Rooms · Accommodation",
